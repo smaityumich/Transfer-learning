@@ -63,7 +63,7 @@ class DensityRatio():
     
     def _densityratio(self, kernel_type = "normal", u, h):
         if kernel_type == "normal":
-            
+            return self._kde(lambda a: self._normalkernel(a,h), self.x, u)/self._kde(lambda a: self._normalkernel(a,h), self.y, u)
         
         
         
