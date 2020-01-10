@@ -15,7 +15,7 @@ from densit_ratio import *
 
 class ClassifierNoLabel():
     
-    def __init__(self, x_source, y_source, x_target, kernel_type = 'normal'):
+    def __init__(self, x_source = np.zeros((1,3)), y_source = np.zeros(1), x_target = np.zeros((1,3)), kernel_type = 'normal'):
         
         ## Converting to numpy array
         try:
@@ -52,6 +52,7 @@ class ClassifierNoLabel():
         self.DensityRatio = DensityRatio(x0,x1)
         
     def _classify(self, x, h):
+        '''Classify a point'''
         densityratio = self.DensityRatio._densityratio(x, h, self.kernel_type)
         odds_ratio = 1/self.prop_source - 1
         regfn = 1/(1+odds_ratio*densityratio)
@@ -61,10 +62,12 @@ class ClassifierNoLabel():
         return label
     
     def _targetProp(self, h):
+        '''To estimate proportion of success in target population'''
         targetlabel = [self._classify(u, h) for u in self.x_target]
         return np.mean(targetlabel)
     
     def _targetPropEstimate(self, h, kernel_type = 'normal', max_step = 100, threshold = 1e-2):
+        '''Iterative algo to find prop of success on target population'''
         step = 0
         error = 1
         while error>threshold:
