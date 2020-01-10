@@ -6,6 +6,10 @@ Created on Thu Jan  9 20:24:23 2020
 """
 import sys
 sys.path.insert(1, 'D:/GitHub/Tarnsfer-learning/without_label/')
+
+## Change the path to local directory:
+## sys.path.insert(1, '${pwd}')
+
 import numpy as np
 from densit_ratio import *
 
