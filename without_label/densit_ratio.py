@@ -11,6 +11,9 @@ from scipy import stats
 
 class DensityRatio():
     
+    '''Class for calculating density ratio with kernel density estimator
+    Adapted only for normal and exponential kernel'''
+    
     def __init__(self, x, y):
         try:
             x = np.array(x)
@@ -54,18 +57,18 @@ class DensityRatio():
             return np.mean(list(kernels))
         
     def _normalkernel(self, x, h):
-        normal = stats.norm()
-        return ft.reduce(lambda a, b: normal.pdf(a,scale = h)*normal.pdf(b, scale = h), x, 1)
+        return ft.reduce(lambda a, b: stats.norm.pdf(a,loc = 0, scale = h)*stats.norm.pdf(b, loc = 0,  scale = h), x, 1)
     
     def _expkernel(self, x, h):
-        exp = stats.expon()
-        return tf.reduce(lambda a, b: exp.pdf(a, scale = h)*exp.pdf(b, scale = h), x, 1)
+        return ft.reduce(lambda a, b: stats.expon.pdf(a, loc = 0, scale = h)*stats.expon.pdf(b, loc = 0, scale = h), x, 1)
     
-    def _densityratio(self, kernel_type = "normal", u, h):
+    def _densityratio(self, u, h, kernel_type = "normal"):
         if kernel_type == "normal":
             return self._kde(lambda a: self._normalkernel(a,h), self.x, u)/self._kde(lambda a: self._normalkernel(a,h), self.y, u)
-        
-        
+        elif kernel_type == "exp":
+            return self._kde(lambda a: self._expkernel(a,h), self.x, u)/self._kde(lambda a: self._expkernel(a,h), self.y, u)
+        else: 
+            raise TypeError("Invalid Kernel")
         
         
         

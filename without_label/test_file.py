@@ -8,3 +8,8 @@ import numpy as np
 
 x = np.random.normal(size  = (20,3))
 y = np.random.normal(size  = (20,3))
+
+
+
+dr = DensityRatio(x,y)
+dr._densityratio([0,0,0],0.1)
