@@ -15,7 +15,7 @@ from densit_ratio import *
 
 class ClassifierNoLabel():
     
-    def __init__(self, x_source, y_source, x_target):
+    def __init__(self, x_source, y_source, x_target, kernel_type = 'normal'):
         
         ## Converting to numpy array
         try:
@@ -36,6 +36,13 @@ class ClassifierNoLabel():
         ## Checking dimension consistency
         if self.DensityRatio.d != x_target.shape[1]:
             raise TypeError('Dimension of sourse and target distribution doesn\'t match')
+            
+            
+        ## Debugging kernel type
+        if kernel_type != 'normal' and kernel_type != 'exp':
+            raise TypeError('Invalid kernel type')
+            
+        self.kernel_type = kernel_type
         
         self.x_target = x_target
         self.prop_target = 0.5
@@ -44,8 +51,8 @@ class ClassifierNoLabel():
         x1 = x_source[y_source == 1]
         self.DensityRatio = DensityRatio(x0,x1)
         
-    def _classify(self, x, h, kernel_type = 'normal'):
-        densityratio = self.DensityRatio._densityratio(x, h, kernel_type)
+    def _classify(self, x, h):
+        densityratio = self.DensityRatio._densityratio(x, h, self.kernel_type)
         odds_ratio = 1/self.prop_source - 1
         regfn = 1/(1+odds_ratio*densityratio)
         label = 0
@@ -53,15 +60,15 @@ class ClassifierNoLabel():
             label = 1
         return label
     
-    def _targetProp(self, h, kernel_type = 'normal'):
-        targetlabel = [self._classify(u, h, kernel_type) for u in self.x_target]
+    def _targetProp(self, h):
+        targetlabel = [self._classify(u, h) for u in self.x_target]
         return np.mean(targetlabel)
     
     def _targetPropEstimate(self, h, kernel_type = 'normal', max_step = 100, threshold = 1e-2):
         step = 0
         error = 1
         while error>threshold:
-            targetprop = self._targetProp(h, kernel_type)
+            targetprop = self._targetProp(h)
             error = np.absolute(self.prop_target-targetprop)
             step += 1
             self.prop_target = targetprop
