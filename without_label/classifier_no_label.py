@@ -7,7 +7,6 @@ Created on Thu Jan  9 20:24:23 2020
 import sys
 sys.path.insert(1, 'D:/GitHub/Tarnsfer-learning/without_label/')
 import numpy as np
-import scipy as sc
 from densit_ratio import *
 
 class ClassifierNoLabel():
@@ -35,7 +34,7 @@ class ClassifierNoLabel():
             raise TypeError('Dimension of sourse and target distribution doesn\'t match')
         
         self.x_target = x_target
-        self.prop_source = 0.5
+        self.prop_target = 0.5
         
         x0 = x_source[y_source == 0]
         x1 = x_source[y_source == 1]
@@ -49,8 +48,18 @@ class ClassifierNoLabel():
         if regfn > 0.5:
             label = 1
         return label
-
-        
-        
-        
-        
+    
+    def _targetProp(self, h, kernel_type = 'normal'):
+        targetlabel = [self._classify(u, h, kernel_type) for u in self.x_target]
+        return np.mean(targetlabel)
+    
+    def _targetPropEstimate(self, h, kernel_type = 'normal', max_step = 100, threshold = 1e-2):
+        step = 0
+        error = 1
+        while error>threshold:
+            targetprop = self._targetProp(h, kernel_type)
+            error = np.absolute(self.prop_target-targetprop)
+            step += 1
+            self.prop_target = targetprop
+            if step == max_step:
+                break
