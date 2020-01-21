@@ -11,6 +11,8 @@ sys.path.insert(1, 'D:/GitHub/Tarnsfer-learning/without_label/')
 ## sys.path.insert(1, '${pwd}')
 
 import numpy as np
+import sklearn.metrics
+import scipy
 from densit_ratio import *
 
 class ClassifierNoLabel():
@@ -46,13 +48,15 @@ class ClassifierNoLabel():
         
         self.x_target = x_target
         self.prop_target = 0.5
+        self.x_source = x_source
+        self.y_source = y_source
         
         x0 = x_source[y_source == 0]
         x1 = x_source[y_source == 1]
         self.DensityRatio = DensityRatio(x0,x1)
         
-    def _classify(self, x, h):
-        '''Classify a point'''
+    def _classifySource(self, x, h):
+        '''Classify a point for source data'''
         densityratio = self.DensityRatio._densityratio(x, h, self.kernel_type)
         odds_ratio = 1/self.prop_source - 1
         regfn = 1/(1+odds_ratio*densityratio)
@@ -63,7 +67,7 @@ class ClassifierNoLabel():
     
     def _targetProp(self, h):
         '''To estimate proportion of success in target population'''
-        targetlabel = [self._classify(u, h) for u in self.x_target]
+        targetlabel = [self._classifySource(u, h) for u in self.x_target]
         return np.mean(targetlabel)
     
     def _targetPropEstimate(self, h, kernel_type = 'normal', max_step = 100, threshold = 1e-2):
@@ -77,3 +81,30 @@ class ClassifierNoLabel():
             self.prop_target = targetprop
             if step == max_step:
                 break
+            
+            
+    def _targetPropBlackbox(self, h, kernel_type = 'normal'):
+        '''Uses black-box predictor to detect label shift.
+        See: Lipton et al. Detecting and Correcting for Label Shift with Black Box Predictors (2018)'''
+        
+        predict_source = [self._classifySource(u, h) for u in self.x_source] #predicted source lables
+        predict_target = [self._classifySource(u, h) for u in self.x_target] #predicted target labels
+        confusion_mx = sklearn.metrics.confusion_matrix(self.y_source, predict_source) #confusion matrix
+        y_hat_target = np.mean(predict_target)
+        mu_hat = [1-y_hat_target, y_hat_target]
+        w_hat = np.matmul(scipy.linalg.inv(confusion_mx), mu_hat)
+        mu_estimated = np.matmul(np.diag([1-np.mean(predict_source),np.mean(predict_source)]), w_hat)
+        self.prop_target = mu_estimated[1]
+        return w_hat, mu_estimated
+    
+    
+    def _classifyTarget(self, x, h):
+        '''Classify a point for target data'''
+        densityratio = self.DensityRatio._densityratio(x, h, self.kernel_type)
+        odds_ratio = 1/self.prop_target - 1
+        regfn = 1/(1+odds_ratio*densityratio)
+        label = 0
+        if regfn > 0.5:
+            label = 1
+        return label
+        
