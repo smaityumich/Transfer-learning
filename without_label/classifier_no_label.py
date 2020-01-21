@@ -36,7 +36,7 @@ class ClassifierNoLabel():
             raise TypeError('Number of features and labels does not match in sourse distribution')
             
         ## Checking dimension consistency
-        if self.DensityRatio.d != x_target.shape[1]:
+        if x_source.shape[1] != x_target.shape[1]:
             raise TypeError('Dimension of sourse and target distribution doesn\'t match')
             
             
@@ -50,6 +50,7 @@ class ClassifierNoLabel():
         self.prop_target = 0.5
         self.x_source = x_source
         self.y_source = y_source
+        self.prop_source = np.mean(y_source)
         
         x0 = x_source[y_source == 0]
         x1 = x_source[y_source == 1]
