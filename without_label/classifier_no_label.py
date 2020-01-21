@@ -13,11 +13,17 @@ sys.path.insert(1, 'D:/GitHub/Tarnsfer-learning/without_label/')
 import numpy as np
 import sklearn.metrics
 import scipy
-from densit_ratio import *
+from sklearn.neighbors import KernelDensity
 
 class ClassifierNoLabel():
     
-    def __init__(self, x_source = np.zeros((1,3)), y_source = np.zeros(1), x_target = np.zeros((1,3)), kernel_type = 'normal'):
+    def __init__(self, bandwidth = 0.1, kernel_type = 'gaussian'):
+        
+        self.bandwidth = bandwidth
+        self.kernel = kernel_type
+        
+    
+    def _data(self, x_source = np.zeros((1,3)), y_source = np.zeros(1), x_target = np.zeros((1,3))):
         
         ## Converting to numpy array
         try:
@@ -38,13 +44,6 @@ class ClassifierNoLabel():
         ## Checking dimension consistency
         if x_source.shape[1] != x_target.shape[1]:
             raise TypeError('Dimension of sourse and target distribution doesn\'t match')
-            
-            
-        ## Debugging kernel type
-        if kernel_type != 'normal' and kernel_type != 'exp':
-            raise TypeError('Invalid kernel type')
-            
-        self.kernel_type = kernel_type
         
         self.x_target = x_target
         self.prop_target = 0.5
@@ -54,29 +53,37 @@ class ClassifierNoLabel():
         
         x0 = x_source[y_source == 0]
         x1 = x_source[y_source == 1]
-        self.DensityRatio = DensityRatio(x0,x1)
         
-    def _classifySource(self, x, h):
+        self.KDE0 = KernelDensity(bandwidth= self.bandwidth, kernel = self.kernel).fit(x0)
+        self.KDE1 = KernelDensity(bandwidth= self.bandwidth, kernel= self.kernel).fit(x1)
+        
+        
+        
+    def _classify(self, x, y):
+        if x > y:
+            return 0
+        else:
+            return 1
+        
+        
+    def _classifySource(self, x):
         '''Classify a point for source data'''
-        densityratio = self.DensityRatio._densityratio(x, h, self.kernel_type)
-        odds_ratio = 1/self.prop_source - 1
-        regfn = 1/(1+odds_ratio*densityratio)
-        label = 0
-        if regfn > 0.5:
-            label = 1
-        return label
+        log_density0, log_density1 = self.KDE0.score_samples(x) + np.log(1-self.prop_source), self.KDE1.score_samples(x) + np.log(self.prop_source)
+        label = [self._classify(log_density0[_],log_density1[_]) for _ in range(len(log_density0))]
+        return np.array(label)
     
-    def _targetProp(self, h):
+    def _targetProp(self):
         '''To estimate proportion of success in target population'''
-        targetlabel = [self._classifySource(u, h) for u in self.x_target]
+        targetlabel = self._classifySource(self.x_target)
         return np.mean(targetlabel)
     
-    def _targetPropEstimate(self, h, kernel_type = 'normal', max_step = 100, threshold = 1e-2):
-        '''Iterative algo to find prop of success on target population'''
+    def _targetPropEstimate(self, max_step = 100, threshold = 1e-2):
+        '''Iterative algo to find prop of success on target population
+        Credit: Yuekai Sun'''
         step = 0
         error = 1
         while error>threshold:
-            targetprop = self._targetProp(h)
+            targetprop = self._targetProp()
             error = np.absolute(self.prop_target-targetprop)
             step += 1
             self.prop_target = targetprop
@@ -84,12 +91,12 @@ class ClassifierNoLabel():
                 break
             
             
-    def _targetPropBlackbox(self, h, kernel_type = 'normal'):
+    def _targetPropBlackbox(self):
         '''Uses black-box predictor to detect label shift.
         See: Lipton et al. Detecting and Correcting for Label Shift with Black Box Predictors (2018)'''
         
-        predict_source = [self._classifySource(u, h) for u in self.x_source] #predicted source lables
-        predict_target = [self._classifySource(u, h) for u in self.x_target] #predicted target labels
+        predict_source = self._classifySource(self.x_source)  #predicted source lables
+        predict_target = self._classifySource(self.x_target)  #predicted target labels
         confusion_mx = sklearn.metrics.confusion_matrix(self.y_source, predict_source) #confusion matrix
         y_hat_target = np.mean(predict_target)
         mu_hat = [1-y_hat_target, y_hat_target]
@@ -99,13 +106,9 @@ class ClassifierNoLabel():
         return w_hat, mu_estimated
     
     
-    def _classifyTarget(self, x, h):
+    def _classifyTarget(self, x):
         '''Classify a point for target data'''
-        densityratio = self.DensityRatio._densityratio(x, h, self.kernel_type)
-        odds_ratio = 1/self.prop_target - 1
-        regfn = 1/(1+odds_ratio*densityratio)
-        label = 0
-        if regfn > 0.5:
-            label = 1
-        return label
+        log_density0, log_density1 = self.KDE0.score_samples(x) + np.log(1-self.prop_target), self.KDE1.score_samples(x) + np.log(self.prop_target)
+        label = [self._classify(log_density0[_],log_density1[_]) for _ in range(len(log_density0))]
+        return np.array(label)
         

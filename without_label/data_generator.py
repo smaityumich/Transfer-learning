@@ -54,12 +54,12 @@ class GeneratorClassification():
             raise TypeError('Wrong distribution input')
             
             
-    def _densityratio(self, x):
+    def _logdensityratio(self, x):
         ## Here x is a scalar
         if self.covariate == 'normal':
-            return st.norm.pdf(x)/st.norm.pdf(x, loc = self.mu)
+            return np.log(st.norm.pdf(x)) - np.log(st.norm.pdf(x, loc = self.mu))
         elif self.covariate == 'exp':
-            return st.expon.pdf(x)/st.expon.pdf(x, loc = self.mu)
+            return np.log(st.expon.pdf(x)) - np.log(st.expon.pdf(x, loc = self.mu))
             
     def _generate(self, n = 100,  prop = 0.5):
         
@@ -75,9 +75,8 @@ class GeneratorClassification():
     
     def _bayesClassifier(self, x, prop_target):
         
-        DR = functools.reduce(lambda u,v: self._densityratio(u)*self._densityratio(v), x, 1)
-        regFn = 1/(1+(1/prop_target-1)*DR)
-        if regFn > 0.5:
+        posteriorRatio = functools.reduce(lambda u,v: self._logdensityratio(u) + self._logdensityratio(v), x, 0) + np.log(prop_target) - np.log(1-prop_target)
+        if posteriorRatio >= 0:
             return 1
         else:
             return 0

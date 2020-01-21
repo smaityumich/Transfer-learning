@@ -12,13 +12,12 @@ sys.path.insert(1, 'D:/GitHub/Tarnsfer-learning/without_label/')
 ## sys.path.insert(1, ${pwd})
 import numpy as np
 import functools
-from densit_ratio import *
 from classifier_no_label import *
 from data_generator import *
 
 
 iter_step = 20
-n_target = 100
+n_target = 200
 alpha = np.arange(0.5, 2.5, step = 0.25)
 source_points = (2**np.array([0,1,2,3,4,5],dtype = int))*100
 par = np.meshgrid(source_points, range(iter_step), alpha)
@@ -37,10 +36,11 @@ def _getdata(parameter):
 def _classify(par_data):
     par, data = par_data
     n_source, _, alpha = par
-    h = n_source**(-alpha)
-    cl = ClassifierNoLabel(data[0], data[1], data[2])
-    cl._targetPropBlackbox(h)
-    return par, data[3], [cl._classifyTarget(_, h) for _ in data[2]], data[4]
+    bandwidth = n_source**(-alpha)
+    cl = ClassifierNoLabel(bandwidth= bandwidth)
+    cl._data(data[0],data[1], data[2])
+    cl._targetPropBlackbox()
+    return par, data[3], cl._classifyTarget(data[2]), data[4]
 
 def _errors(par_labels):
     par, y_true, y_estimate, bayes_label = par_labels
@@ -54,6 +54,8 @@ data = map(_getdata, par)
 classify = map(_classify, data)
 error = map(_errors, classify)
 error = list(error)
+error = np.array(error)
+np.save('D:/GitHub/Tarnsfer-learning/without_label/result.npy', error)
 
 
     
