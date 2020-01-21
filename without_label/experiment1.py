@@ -54,5 +54,7 @@ data = map(_getdata, par)
 classify = map(_classify, data)
 error = map(_errors, classify)
 error = list(error)
+
+
     
     
