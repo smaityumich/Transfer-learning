@@ -54,8 +54,8 @@ class ClassifierNoLabel():
         x0 = x_source[y_source == 0]
         x1 = x_source[y_source == 1]
         
-        self.KDE0 = KernelDensity(bandwidth= self.bandwidth, kernel = self.kernel).fit(x0)
-        self.KDE1 = KernelDensity(bandwidth= self.bandwidth, kernel= self.kernel).fit(x1)
+        self.KDE0 = KernelDensity(bandwidth= self.bandwidth, kernel = self.kernel).fit(x0)  # Kernel density for class 0
+        self.KDE1 = KernelDensity(bandwidth= self.bandwidth, kernel= self.kernel).fit(x1)   # Kernel density for class 1
         
         
         
@@ -77,7 +77,7 @@ class ClassifierNoLabel():
         targetlabel = self._classifySource(self.x_target)
         return np.mean(targetlabel)
     
-    def _targetPropEstimate(self, max_step = 100, threshold = 1e-2):
+    def _targetPropEstimateYK(self, max_step = 100, threshold = 1e-2):
         '''Iterative algo to find prop of success on target population
         Credit: Yuekai Sun'''
         step = 0
@@ -90,6 +90,8 @@ class ClassifierNoLabel():
             if step == max_step:
                 break
             
+        return self.prop_target
+            
             
     def _targetPropBlackbox(self):
         '''Uses black-box predictor to detect label shift.
@@ -97,7 +99,7 @@ class ClassifierNoLabel():
         
         predict_source = self._classifySource(self.x_source)  #predicted source lables
         predict_target = self._classifySource(self.x_target)  #predicted target labels
-        confusion_mx = sklearn.metrics.confusion_matrix(self.y_source, predict_source) #confusion matrix
+        confusion_mx = sklearn.metrics.confusion_matrix(self.y_source, predict_source)/len(predict_source) #confusion matrix
         y_hat_target = np.mean(predict_target)
         mu_hat = [1-y_hat_target, y_hat_target]
         w_hat = np.matmul(scipy.linalg.inv(confusion_mx), mu_hat)

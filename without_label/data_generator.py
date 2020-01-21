@@ -71,7 +71,7 @@ class GeneratorClassification():
             
         y = np.random.binomial(1, prop, n)
         x = [self._generateCovariate(y[i]) for i in range(n)]
-        return np.array(x), y
+        return np.array(x), np.array(y)
     
     def _bayesClassifier(self, x, prop_target):
         
