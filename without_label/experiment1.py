@@ -17,11 +17,10 @@ from data_generator import *
 import seaborn as sns
 import pandas as pd
 
-
 iter_step = 20
-n_target = 200
+n_target = 400
 alpha = np.arange(0.5, 2.5, step = 0.5)
-source_points = (2**np.array([0, 2, 4, 6],dtype = int))*100
+source_points = (2**np.array([0, 2, 4, 6, 8, 10],dtype = int))*10
 par = np.meshgrid(source_points, range(iter_step), alpha)
 par = np.array(par)
 par = par.reshape((3,-1))
