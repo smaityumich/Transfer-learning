@@ -131,7 +131,7 @@ class WithoutLabelV2():
         self.x_classify = x_classify
         
         if bandwidth == None:
-            bandwidths =  np.linspace(0.1, 1, 10)
+            bandwidths =  np.linspace(0.1, 2, 20)
             grid = GridSearchCV(KDEClassifier(), {'bandwidth': bandwidths}, cv = 5)
             grid.fit(self.x_source, self.y_source)
             self.bandwidth = grid.best_params_['bandwidth']
@@ -169,7 +169,7 @@ class DataGenerator():
         prior = np.log(self.prop/(1-self.prop))
         log_lik_ratio = 0.5*np.sum(x**2) - 0.5*np.sum((x-self.mu)**2)  ## Calculates log-likelihood ratio for normal model Y=1: N(mu, 1); Y=0: N(0,1)
         posterior = prior + log_lik_ratio
-        return 0 if posterior<1 else 1
+        return 0 if posterior<0 else 1
         
     def _bayesY(self):
         self.bayesLabel = [self._bayesDecision(x) for x in self.x]
@@ -178,7 +178,9 @@ class DataGenerator():
         self._generateY(n, prop)
         self._generateX(distance)
         self._bayesY()
-        return self.x, self.y, self.bayesLabel
+        return np.array(self.x), np.array(self.y), np.array(self.bayesLabel)
+
+
         
         
     

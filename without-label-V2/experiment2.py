@@ -12,7 +12,7 @@ if not os.path.exists(outdir):
 
 
 ## Setting seed and parameter
-np.random.seed(100)
+#np.random.seed(100)
 m, n, n_test, d, prop, distance = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5], sys.argv[6]
 m = float(m)
 n, n_test = float(n), float(n_test)
@@ -47,8 +47,8 @@ with open('.out/experiment.out','a') as fh:
     fh.writelines(f'Bayes error: {bayes_error}\n')
     fh.writelines(f'w: {str(w)}\nw_error: {w_error}\n')
     fh.writelines(f'Bandwidth chosen {bandwidth}\n\n\n')
-os.system(f'echo Prediction error {error}')
-os.system(f'echo Bayes error: {bayes_error}')
+os.system(f'echo Excess risk: {error-bayes_error}')
+os.system(f'echo w_error: {w_error}')
     
 
 
