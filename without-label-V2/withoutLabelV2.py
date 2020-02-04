@@ -161,13 +161,14 @@ class DataGenerator():
         
     def _generateX(self, distance = 1):
         self.mu = distance/np.sqrt(self.d)
-        f = lambda y : np.random.normal(loc = y*self.mu, scale = 1, size = (self.d,))
+        f = lambda y : np.random.normal(loc = y*self.mu, scale = 1, size = (self.d,))  ## Generates data from N_d(mu, I_d) if label=1, else from N_d(0,I_d) if label=0
         self.x = [f(y) for y in self.y]
         
     def _bayesDecision(self, x):
         x = np.array(x)
         prior = np.log(self.prop/(1-self.prop))
-        posterior = prior - 0.5*np.sum(x**2) + 0.5*np.sum((x-self.mu)**2)
+        log_lik_ratio = 0.5*np.sum(x**2) - 0.5*np.sum((x-self.mu)**2)  ## Calculates log-likelihood ratio for normal model Y=1: N(mu, 1); Y=0: N(0,1)
+        posterior = prior + log_lik_ratio
         return 0 if posterior<0.5 else 1
         
     def _bayesY(self):
