@@ -122,7 +122,7 @@ class WithoutLabelV2():
         if x_classify == None:
             x_classify = self.x_target
         else:
-            x_classify = np.range(x_classify)
+            x_classify = np.array(x_classify)
             if len(x_classify.shape) != 2:
                 raise TypeError('Shape of x_classify is not (n,d)')
             if x_classify.shape[1] != self.x_target.shape[1]:
@@ -169,7 +169,7 @@ class DataGenerator():
         prior = np.log(self.prop/(1-self.prop))
         log_lik_ratio = 0.5*np.sum(x**2) - 0.5*np.sum((x-self.mu)**2)  ## Calculates log-likelihood ratio for normal model Y=1: N(mu, 1); Y=0: N(0,1)
         posterior = prior + log_lik_ratio
-        return 0 if posterior<0.5 else 1
+        return 0 if posterior<1 else 1
         
     def _bayesY(self):
         self.bayesLabel = [self._bayesDecision(x) for x in self.x]
@@ -182,7 +182,3 @@ class DataGenerator():
         
         
     
-    
-    
-
-
