@@ -148,7 +148,40 @@ class WithoutLabelV2():
     
     
     
+
+class DataGenerator():
     
-wl = WithoutLabelV2()
-wl._classify()
+    def __init__(self, d = 5):
+        self.d = d
+        
+    def _generateY(self, n = 100, prop = 0.5):
+        self.prop = prop
+        self.n = n
+        self.y = np.random.binomial(1, self.prop, (self.n,))
+        
+    def _generateX(self, distance = 1):
+        self.mu = distance/np.sqrt(self.d)
+        f = lambda y : np.random.normal(loc = y*self.mu, scale = 1, size = (self.d,))
+        self.x = [f(y) for y in self.y]
+        
+    def _bayesDecision(self, x):
+        x = np.array(x)
+        prior = np.log(self.prop/(1-self.prop))
+        posterior = prior - 0.5*np.sum(x**2) + 0.5*np.sum((x-self.mu)**2)
+        return 0 if posterior<0.5 else 1
+        
+    def _bayesY(self):
+        self.bayesLabel = [self._bayesDecision(x) for x in self.x]
+        
+    def _getData(self, n = 100, prop = 0.5, distance = 0.2):
+        self._generateY(n, prop)
+        self._generateX(distance)
+        self._bayesY()
+        return self.x, self.y, self.bayesLabel
+        
+        
+    
+    
+    
+
 
