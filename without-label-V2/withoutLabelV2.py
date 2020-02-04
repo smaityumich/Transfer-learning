@@ -140,7 +140,6 @@ class WithoutLabelV2():
         kde = KDEClassifier(bandwidth = self.bandwidth, kernel = 'gaussian')
         kde.fit(self.x_source, self.y_source)   
         self._estimateProportionRatio(classifier = lambda x: kde.predict(x))
-        #self.x_classify = x_classify
         kde = KDEClassifier(bandwidth = self.bandwidth, kernel = 'gaussian')
         kde.fit(self.x_source, self.y_source, weights= self.w)
         self._targetClassifier = lambda x: kde.predict(x)
