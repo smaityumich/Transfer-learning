@@ -1,0 +1,2300 @@
+Iteration index 0.0
+Iteration index 14.0
+Iteration index 1.0
+Iteration index 15.0
+Iteration index 4.0
+Iteration index 4.0
+Iteration index 2.0
+Iteration index 5.0
+Iteration index 3.0
+Iteration index 6.0
+Iteration index 7.0
+Iteration index 8.0
+Iteration index 9.0
+Iteration index 10.0
+Iteration index 11.0
+Iteration index 12.0
+Iteration index 13.0
+Iteration index 16.0
+Iteration index 17.0
+Iteration index 18.0
+Iteration index 0.0
+Iteration index 19.0
+Iteration index 2.0
+Iteration index 5.0
+Iteration index 1.0
+Iteration index 6.0
+Iteration index 8.0
+Iteration index 9.0
+Iteration index 7.0
+Iteration index 3.0
+Iteration index 11.0
+Iteration index 10.0
+Iteration index 12.0
+Iteration index 13.0
+Iteration index 14.0
+Iteration index 15.0
+Iteration index 16.0
+Iteration index 17.0
+Iteration index 18.0
+Iteration index 19.0
+Iteration index 0.0
+Iteration index 1.0
+Iteration index 2.0
+Iteration index 3.0
+Iteration index 4.0
+Iteration index 5.0
+Iteration index 7.0
+Iteration index 8.0
+Iteration index 6.0
+Iteration index 10.0
+Iteration index 9.0
+Iteration index 11.0
+Iteration index 12.0
+Iteration index 13.0
+Iteration index 14.0
+Iteration index 15.0
+Iteration index 16.0
+Iteration index 17.0
+Iteration index 19.0
+Iteration index 18.0
+Iteration index 0.0
+Iteration index 1.0
+Iteration index 2.0
+Iteration index 3.0
+Iteration index 4.0
+Iteration index 6.0
+Iteration index 5.0
+Iteration index 7.0
+Iteration index 8.0
+Iteration index 9.0
+Iteration index 10.0
+Iteration index 11.0
+Iteration index 12.0
+Iteration index 13.0
+Iteration index 14.0
+Iteration index 15.0
+Iteration index 16.0
+Iteration index 17.0
+Iteration index 18.0
+Iteration index 19.0
+Iteration index 0.0
+Iteration index 1.0
+Iteration index 2.0
+Iteration index 3.0
+Iteration index 4.0
+Iteration index 5.0
+Iteration index 7.0
+Iteration index 6.0
+Iteration index 8.0
+Iteration index 9.0
+Iteration index 10.0
+Iteration index 11.0
+Iteration index 12.0
+Iteration index 13.0
+Iteration index 14.0
+Iteration index 15.0
+Iteration index 16.0
+Iteration index 17.0
+Iteration index 18.0
+Iteration index 19.0
+Iteration index 0.0
+Iteration index 3.0
+Iteration index 1.0
+Iteration index 4.0
+Iteration index 2.0
+Iteration index 5.0
+Iteration index 6.0
+Iteration index 7.0
+Iteration index 7.0
+Iteration index 8.0
+Iteration index 9.0
+Iteration index 10.0
+Iteration index 11.0
+Iteration index 12.0
+Iteration index 13.0
+Iteration index 14.0
+Iteration index 15.0
+Iteration index 16.0
+Iteration index 17.0
+Iteration index 18.0
+Iteration index 19.0
+Iteration index 0.0
+Iteration index 1.0
+Iteration index 2.0
+Iteration index 3.0
+Iteration index 4.0
+Iteration index 5.0
+Iteration index 9.0
+Iteration index 11.0
+Iteration index 13.0
+Iteration index 8.0
+Iteration index 6.0
+Iteration index 10.0
+Iteration index 14.0
+Iteration index 12.0
+Iteration index 15.0
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.189
+Bayes error: 0.189
+w: [0.33564356 1.54356436]
+w_error: 0.007326732673267307
+Bandwidth chosen 0.9999999999999999
+Target proportion is estimated as 0.8489603960396039 with error 0.04896039603960389
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.183
+Bayes error: 0.177
+w: [0.5294964  1.39280576]
+w_error: 0.059698773355416526
+Bandwidth chosen 2.0
+Target proportion is estimated as 0.7590791366906474 with error 0.04092086330935263
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.179
+Bayes error: 0.174
+w: [0.63045685 1.34111675]
+w_error: 0.12013089747223557
+Bandwidth chosen 1.0999999999999999
+Target proportion is estimated as 0.6973807106598987 with error 0.10261928934010134
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.185
+Bayes error: 0.18
+w: [0.72888889 1.27111111]
+w_error: 0.21633580246913608
+Bandwidth chosen 1.2
+Target proportion is estimated as 0.6355555555555554 with error 0.16444444444444462
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.195
+Bayes error: 0.159
+w: [0.54732673 1.38561056]
+w_error: 0.06766799769085816
+Bandwidth chosen 0.5
+Target proportion is estimated as 0.7482297029702972 with error 0.051770297029702816
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.322
+Bayes error: 0.199
+w: [0.84089027 1.14109731]
+w_error: 0.40497590970855935
+Bandwidth chosen 0.4
+Target proportion is estimated as 0.6047815734989648 with error 0.19521842650103527
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.214
+Bayes error: 0.213
+w: [0.63074981 1.34774047]
+w_error: 0.11688034580533099
+Bandwidth chosen 1.2
+Target proportion is estimated as 0.6940863418328703 with error 0.10591365816712972
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.436
+Bayes error: 0.198
+w: [0.94953271 1.05806452]
+w_error: 0.5956802683465536
+Bandwidth chosen 0.1
+Target proportion is estimated as 0.49199999999999994 with error 0.3080000000000001
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.19
+Bayes error: 0.177
+w: [0.58823529 1.41176471]
+w_error: 0.0708650519031143
+Bandwidth chosen 0.7
+Target proportion is estimated as 0.7058823529411764 with error 0.09411764705882364
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.193
+Bayes error: 0.189
+w: [0.64019139 1.38979266]
+w_error: 0.10187902698605311
+Bandwidth chosen 1.0999999999999999
+Target proportion is estimated as 0.6671004784688994 with error 0.13289952153110063
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.183
+Bayes error: 0.158
+w: [0.37221207 1.61535649]
+w_error: 0.0010079910697873011
+Bandwidth chosen 1.7
+Target proportion is estimated as 0.8157550274223032 with error 0.01575502742230317
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.223
+Bayes error: 0.198
+w: [0.3679198  1.67117794]
+w_error: 0.00609543909900056
+Bandwidth chosen 1.5
+Target proportion is estimated as 0.8105213032581452 with error 0.010521303258145154
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.352
+Bayes error: 0.199
+w: [0.84447268 1.16848793]
+w_error: 0.3837586317687839
+Bandwidth chosen 0.5
+Target proportion is estimated as 0.5608742058449809 with error 0.2391257941550191
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.171
+Bayes error: 0.173
+w: [0.74624108 1.2250315 ]
+w_error: 0.26048425860546204
+Bandwidth chosen 1.2
+Target proportion is estimated as 0.6492666946661068 with error 0.15073330533389329
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.179
+Bayes error: 0.168
+w: [0.57533764 1.32695244]
+w_error: 0.10529825953922625
+Bandwidth chosen 1.5
+Target proportion is estimated as 0.7497281268349971 with error 0.05027187316500292
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.189
+Bayes error: 0.175
+w: [0.39330855 1.65724907]
+w_error: 0.00332223158883928
+Bandwidth chosen 1.0999999999999999
+Target proportion is estimated as 0.7954795539033457 with error 0.0045204460966543625
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.186
+Bayes error: 0.185
+w: [0.49199808 1.58447532]
+w_error: 0.008704662926933261
+Bandwidth chosen 0.8999999999999999
+Target proportion is estimated as 0.7367810253953045 with error 0.0632189746046955
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.216
+Bayes error: 0.205
+w: [0.43341067 1.45429234]
+w_error: 0.02234699425606023
+Bandwidth chosen 1.5
+Target proportion is estimated as 0.8071322505800465 with error 0.0071322505800464064
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.241
+Bayes error: 0.191
+w: [0.79461214 1.15813048]
+w_error: 0.35096741543193666
+Bandwidth chosen 0.5
+Target proportion is estimated as 0.6543437195715677 with error 0.14565628042843237
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.214
+Bayes error: 0.202
+w: [0.78792822 1.19575856]
+w_error: 0.3138994435411113
+Bandwidth chosen 0.9999999999999999
+Target proportion is estimated as 0.6217944535073411 with error 0.17820554649265896
+
+
+Iteration index 16.0
+Iteration index 17.0
+Iteration index 18.0
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.23
+Bayes error: 0.2
+w: [0.69135565 1.24998796]
+w_error: 0.20739654054704687
+Bandwidth chosen 0.4
+Target proportion is estimated as 0.6906183481820372 with error 0.10938165181796289
+
+
+Iteration index 19.0
+Iteration index 0.0
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.169
+Bayes error: 0.171
+w: [0.59294118 1.40705882]
+w_error: 0.0744525951557096
+Bandwidth chosen 1.0999999999999999
+Target proportion is estimated as 0.7035294117647057 with error 0.09647058823529431
+
+
+Iteration index 1.0
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.21
+Bayes error: 0.189
+w: [0.25336788 1.95025907]
+w_error: 0.1441823941582319
+Bandwidth chosen 0.7999999999999999
+Target proportion is estimated as 0.8581139896373055 with error 0.05811398963730541
+
+
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.195
+Bayes error: 0.179
+w: [0.14130866 1.8333113 ]
+w_error: 0.12135537393700489
+Bandwidth chosen 1.8
+Target proportion is estimated as 0.9304054857898215 with error 0.13040548578982147
+
+
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.194
+Bayes error: 0.195
+w: [0.11726588 1.85664346]
+w_error: 0.14580444593306507
+Bandwidth chosen 1.2
+Target proportion is estimated as 0.9422465539292311 with error 0.14224655392923102
+
+
+Iteration index 2.0
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.191
+Bayes error: 0.182
+w: [0.45240964 1.53674699]
+w_error: 0.0067477137465526225
+Bandwidth chosen 1.5999999999999999
+Target proportion is estimated as 0.7760572289156623 with error 0.023942771084337733
+
+
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.224
+Bayes error: 0.192
+w: [0.09083156 1.83923241]
+w_error: 0.15281727215279042
+Bandwidth chosen 1.4
+Target proportion is estimated as 0.9564008528784648 with error 0.15640085287846472
+
+
+Iteration index 3.0
+Iteration index 4.0
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.191
+Bayes error: 0.188
+w: [0.6810369  1.28570629]
+w_error: 0.17776227468398031
+Bandwidth chosen 0.7999999999999999
+Target proportion is estimated as 0.6782100666256087 with error 0.12178993337439137
+
+
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.176
+Bayes error: 0.181
+w: [0.72387686 1.3307409 ]
+w_error: 0.1773966807621899
+Bandwidth chosen 1.3
+Target proportion is estimated as 0.6054871115039033 with error 0.19451288849609671
+
+
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.201
+Bayes error: 0.191
+w: [0.55181094 1.51050412]
+w_error: 0.031056074306131887
+Bandwidth chosen 1.5999999999999999
+Target proportion is estimated as 0.7061606748343042 with error 0.09383932516569582
+
+
+Iteration index 6.0
+Iteration index 5.0
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.185
+Bayes error: 0.182
+w: [0.48492537 1.49985075]
+w_error: 0.017242192024950004
+Bandwidth chosen 1.7
+Target proportion is estimated as 0.7611742537313432 with error 0.03882574626865687
+
+
+Iteration index 7.0
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.202
+Bayes error: 0.191
+w: [0.44164515 1.57536058]
+w_error: 0.0023414190708346927
+Bandwidth chosen 1.4
+Target proportion is estimated as 0.7758650878629465 with error 0.024134912137053544
+
+
+Iteration index 8.0
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.228
+Bayes error: 0.217
+w: [0.47415848 1.52060927]
+w_error: 0.01180236853272076
+Bandwidth chosen 0.7999999999999999
+Target proportion is estimated as 0.7641061566188013 with error 0.03589384338119872
+
+
+Iteration index 9.0
+Iteration index 11.0
+Iteration index 10.0
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.206
+Bayes error: 0.181
+w: [0.20691321 1.88540377]
+w_error: 0.11873782339622624
+Bandwidth chosen 1.0999999999999999
+Target proportion is estimated as 0.8908532830188679 with error 0.09085328301886786
+
+
+Iteration index 12.0
+Iteration index 13.0
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.183
+Bayes error: 0.168
+w: [0.48400981 1.49081994]
+w_error: 0.018977933089798536
+Bandwidth chosen 0.8999999999999999
+Target proportion is estimated as 0.764045219286298 with error 0.03595478071370206
+
+
+Iteration index 14.0
+Iteration index 15.0
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.196
+Bayes error: 0.172
+w: [0.46957767 1.58625626]
+w_error: 0.005029941960710418
+Bandwidth chosen 1.5
+Target proportion is estimated as 0.7534717251252685 with error 0.046528274874731546
+
+
+Iteration index 16.0
+Iteration index 17.0
+Iteration index 18.0
+Iteration index 19.0
+Iteration index 0.0
+Iteration index 1.0
+Iteration index 2.0
+Iteration index 3.0
+Iteration index 4.0
+Iteration index 5.0
+Iteration index 6.0
+Iteration index 7.0
+Iteration index 8.0
+Iteration index 9.0
+Iteration index 10.0
+Iteration index 11.0
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.209
+Bayes error: 0.185
+w: [0.16501068 1.81030983]
+w_error: 0.0994502029457959
+Bandwidth chosen 1.3
+Target proportion is estimated as 0.9187322382478631 with error 0.11873223824786305
+
+
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.213
+Bayes error: 0.201
+w: [0.38732005 1.6978654 ]
+w_error: 0.009738417619258274
+Bandwidth chosen 1.0999999999999999
+Target proportion is estimated as 0.7937520743209704 with error 0.006247925679029653
+
+
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.195
+Bayes error: 0.185
+w: [0.52870523 1.56451791]
+w_error: 0.01782401627089846
+Bandwidth chosen 1.5999999999999999
+Target proportion is estimated as 0.7118556473829201 with error 0.08814435261707998
+
+
+Iteration index 12.0
+Iteration index 13.0
+Iteration index 14.0
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.2
+Bayes error: 0.187
+w: [0.37912911 1.63341374]
+w_error: 0.0015520718130245166
+Bandwidth chosen 1.2
+Target proportion is estimated as 0.8085397994160209 with error 0.008539799416020899
+
+
+Iteration index 15.0
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.193
+Bayes error: 0.179
+w: [0.38642374 1.61974286]
+w_error: 0.0005740951702745819
+Bandwidth chosen 2.0
+Target proportion is estimated as 0.8058220705624278 with error 0.0058220705624277835
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.18
+Bayes error: 0.172
+w: [0.46663585 1.49978675]
+w_error: 0.014483031879512939
+Bandwidth chosen 0.7
+Target proportion is estimated as 0.7742649089580508 with error 0.025735091041949265
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.173
+Bayes error: 0.179
+w: [0.54275941 1.45496009]
+w_error: 0.04141682344574211
+Bandwidth chosen 0.8999999999999999
+Target proportion is estimated as 0.7292987457240591 with error 0.07070125427594098
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.199
+Bayes error: 0.188
+w: [0.11699192 1.93294684]
+w_error: 0.19094717640277253
+Bandwidth chosen 1.8
+Target proportion is estimated as 0.9398954029558261 with error 0.13989540295582603
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.177
+Bayes error: 0.169
+w: [0.36241071 1.64078523]
+w_error: 0.0030763894752268376
+Bandwidth chosen 0.5
+Target proportion is estimated as 0.8183416318323722 with error 0.01834163183237214
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.221
+Bayes error: 0.216
+w: [0.37063895 1.64852941]
+w_error: 0.0032171753432434676
+Bandwidth chosen 1.5999999999999999
+Target proportion is estimated as 0.8119007352941173 with error 0.011900735294117282
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.217
+Bayes error: 0.187
+w: [0.64750615 1.37996091]
+w_error: 0.109676496379849
+Bandwidth chosen 0.4
+Target proportion is estimated as 0.664106185762028 with error 0.1358938142379721
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.197
+Bayes error: 0.195
+w: [0.56110322 1.45226419]
+w_error: 0.04778011690048882
+Bandwidth chosen 1.9
+Target proportion is estimated as 0.7152401148663575 with error 0.08475988513364252
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.193
+Bayes error: 0.174
+w: [0.35717803 1.66572148]
+w_error: 0.006153034387619352
+Bandwidth chosen 0.6
+Target proportion is estimated as 0.81828567790135 with error 0.01828567790134994
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.224
+Bayes error: 0.209
+w: [0.65236523 1.3881002 ]
+w_error: 0.1085897329825999
+Bandwidth chosen 0.6
+Target proportion is estimated as 0.6558773436309131 with error 0.14412265636908694
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.176
+Bayes error: 0.175
+w: [0.63617413 1.38826896]
+w_error: 0.10060825307607726
+Bandwidth chosen 0.8999999999999999
+Target proportion is estimated as 0.6715751072961376 with error 0.12842489270386248
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.209
+Bayes error: 0.201
+w: [0.41828419 1.57881448]
+w_error: 0.0007831379656570326
+Bandwidth chosen 0.7
+Target proportion is estimated as 0.7913807584338032 with error 0.008619241566196867
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.184
+Bayes error: 0.174
+w: [0.45609845 1.49457397]
+w_error: 0.014261684577089151
+Bandwidth chosen 1.3
+Target proportion is estimated as 0.7827831143880783 with error 0.017216885611921695
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.18
+Bayes error: 0.184
+w: [0.69903234 1.29797295]
+w_error: 0.18064067987668941
+Bandwidth chosen 1.4
+Target proportion is estimated as 0.6522314088716595 with error 0.1477685911283405
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.249
+Bayes error: 0.205
+w: [0.70347615 1.29950399]
+w_error: 0.18239562452594207
+Bandwidth chosen 0.3
+Target proportion is estimated as 0.646503235288114 with error 0.153496764711886
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.208
+Bayes error: 0.204
+w: [0.43201991 1.54027375]
+w_error: 0.004592500052899448
+Bandwidth chosen 0.7
+Target proportion is estimated as 0.7893902944836166 with error 0.010609705516383405
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.263
+Bayes error: 0.175
+w: [0.72975235 1.28268872]
+w_error: 0.20942306049119164
+Bandwidth chosen 0.4
+Target proportion is estimated as 0.6269141115809695 with error 0.1730858884190305
+
+
+Iteration index 16.0
+Iteration index 17.0
+Iteration index 18.0
+Iteration index 19.0
+Iteration index 0.0
+Iteration index 1.0
+Iteration index 2.0
+Iteration index 3.0
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.22
+Bayes error: 0.194
+w: [0.31532176 1.70906881]
+w_error: 0.019066408894682658
+Bandwidth chosen 1.7
+Target proportion is estimated as 0.839580052670673 with error 0.039580052670672994
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.195
+Bayes error: 0.169
+w: [0.45537587 1.58706238]
+w_error: 0.003233868642609501
+Bandwidth chosen 1.5
+Target proportion is estimated as 0.7637737693264618 with error 0.03622623067353825
+
+
+Iteration index 4.0
+Iteration index 5.0
+Iteration index 6.0
+Iteration index 7.0
+Iteration index 8.0
+Iteration index 9.0
+Iteration index 10.0
+Iteration index 11.0
+Iteration index 12.0
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.213
+Bayes error: 0.195
+w: [0.49448224 1.46198035]
+w_error: 0.02797631759514917
+Bandwidth chosen 1.8
+Target proportion is estimated as 0.763884731670446 with error 0.03611526832955403
+
+
+Iteration index 13.0
+Iteration index 14.0
+Iteration index 15.0
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.194
+Bayes error: 0.182
+w: [0.57298763 1.4154288 ]
+w_error: 0.0639912498375112
+Bandwidth chosen 2.0
+Target proportion is estimated as 0.7174454726765057 with error 0.08255452732349433
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.181
+Bayes error: 0.171
+w: [0.5237923  1.51203136]
+w_error: 0.023063015559206222
+Bandwidth chosen 2.0
+Target proportion is estimated as 0.7286101128090247 with error 0.07138988719097539
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.183
+Bayes error: 0.182
+w: [0.34939461 1.66209149]
+w_error: 0.006416258800184963
+Bandwidth chosen 1.9
+Target proportion is estimated as 0.8237740946025937 with error 0.02377409460259361
+
+
+Iteration index 16.0
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.199
+Bayes error: 0.183
+w: [0.46432739 1.52244612]
+w_error: 0.010152617734101314
+Bandwidth chosen 1.9
+Target proportion is estimated as 0.7707383490235743 with error 0.029261650976425746
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.195
+Bayes error: 0.178
+w: [0.30059606 1.75579281]
+w_error: 0.034152543112227006
+Bandwidth chosen 1.7
+Target proportion is estimated as 0.8438779202320165 with error 0.04387792023201642
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.186
+Bayes error: 0.181
+w: [0.38487403 1.64505528]
+w_error: 0.0022587728185408085
+Bandwidth chosen 0.7999999999999999
+Target proportion is estimated as 0.8029926062408073 with error 0.0029926062408072163
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.193
+Bayes error: 0.186
+w: [0.4127917  1.60207433]
+w_error: 0.0001679305030669037
+Bandwidth chosen 1.0999999999999999
+Target proportion is estimated as 0.7910242005185826 with error 0.008975799481417468
+
+
+Iteration index 17.0
+Iteration index 18.0
+Iteration index 19.0
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.208
+Bayes error: 0.182
+w: [0.23477091 1.74261148]
+w_error: 0.04763868533928749
+Bandwidth chosen 1.4
+Target proportion is estimated as 0.8843753256261384 with error 0.08437532562613836
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.2
+Bayes error: 0.192
+w: [0.69860193 1.27891109]
+w_error: 0.19226120028959975
+Bandwidth chosen 1.9
+Target proportion is estimated as 0.6642344475568005 with error 0.13576555244319954
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.17
+Bayes error: 0.176
+w: [0.35715023 1.63486406]
+w_error: 0.0030516056442620983
+Bandwidth chosen 0.5
+Target proportion is estimated as 0.8225409803532446 with error 0.02254098035324459
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.188
+Bayes error: 0.182
+w: [0.35667721 1.65304555]
+w_error: 0.004690694708410411
+Bandwidth chosen 1.8
+Target proportion is estimated as 0.820323855274954 with error 0.02032385527495395
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.203
+Bayes error: 0.195
+w: [0.41670936 1.54520395]
+w_error: 0.003281810267718532
+Bandwidth chosen 1.0999999999999999
+Target proportion is estimated as 0.7986772897218807 with error 0.0013227102781193656
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.189
+Bayes error: 0.185
+w: [0.48681027 1.4654796 ]
+w_error: 0.025631761002535405
+Bandwidth chosen 1.0999999999999999
+Target proportion is estimated as 0.7684608652736381 with error 0.03153913472636194
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.2
+Bayes error: 0.193
+w: [0.30649346 1.70575003]
+w_error: 0.019926540934130085
+Bandwidth chosen 1.5999999999999999
+Target proportion is estimated as 0.8454123586074583 with error 0.04541235860745829
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.21
+Bayes error: 0.186
+w: [0.21343165 1.72970799]
+w_error: 0.051631912588725626
+Bandwidth chosen 0.6
+Target proportion is estimated as 0.8972860195232312 with error 0.09728601952323113
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.192
+Bayes error: 0.172
+w: [0.50257197 1.54704028]
+w_error: 0.013325741274402106
+Bandwidth chosen 1.7
+Target proportion is estimated as 0.7367779311755381 with error 0.06322206882446191
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.182
+Bayes error: 0.169
+w: [0.25077988 1.64467778]
+w_error: 0.024262746969552676
+Bandwidth chosen 0.6
+Target proportion is estimated as 0.8840143041923455 with error 0.08401430419234546
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.208
+Bayes error: 0.197
+w: [0.48051866 1.52865251]
+w_error: 0.011573717910664385
+Bandwidth chosen 0.7
+Target proportion is estimated as 0.7576384022720837 with error 0.04236159772791637
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.188
+Bayes error: 0.188
+w: [0.71028769 1.27904805]
+w_error: 0.19928860759499462
+Bandwidth chosen 1.5999999999999999
+Target proportion is estimated as 0.6515151001656876 with error 0.14848489983431246
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.18
+Bayes error: 0.178
+w: [0.44430821 1.58127351]
+w_error: 0.0023138985172958043
+Bandwidth chosen 0.7999999999999999
+Target proportion is estimated as 0.7728474292880033 with error 0.027152570711996726
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.197
+Bayes error: 0.195
+w: [0.2130679  1.78988864]
+w_error: 0.07100130379664099
+Bandwidth chosen 1.4
+Target proportion is estimated as 0.8932662979205676 with error 0.09326629792056751
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.204
+Bayes error: 0.195
+w: [0.77292434 1.22878514]
+w_error: 0.2768730307314811
+Bandwidth chosen 1.2
+Target proportion is estimated as 0.6120885990153861 with error 0.1879114009846139
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.207
+Bayes error: 0.193
+w: [0.43515016 1.59085315]
+w_error: 0.0013191987620586002
+Bandwidth chosen 1.2
+Target proportion is estimated as 0.7775294790693466 with error 0.022470520930653493
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.183
+Bayes error: 0.172
+w: [0.47609711 1.53716625]
+w_error: 0.009738849999611438
+Bandwidth chosen 0.7999999999999999
+Target proportion is estimated as 0.7589758376102879 with error 0.04102416238971218
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.194
+Bayes error: 0.189
+w: [0.36083398 1.6455898 ]
+w_error: 0.0036124076164921323
+Bandwidth chosen 1.9
+Target proportion is estimated as 0.8186809271501453 with error 0.018680927150145243
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.172
+Bayes error: 0.171
+w: [0.6507026  1.32608126]
+w_error: 0.13788326955806768
+Bandwidth chosen 0.6
+Target proportion is estimated as 0.6858326514014329 with error 0.11416734859856714
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.195
+Bayes error: 0.183
+w: [0.40513761 1.57944954]
+w_error: 0.0004487164380102658
+Bandwidth chosen 2.0
+Target proportion is estimated as 0.8000899082568809 with error 8.990825688082182e-05
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.204
+Bayes error: 0.182
+w: [0.19454617 1.79644316]
+w_error: 0.08080118867233552
+Bandwidth chosen 1.8
+Target proportion is estimated as 0.9032740745619814 with error 0.10327407456198134
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.179
+Bayes error: 0.167
+w: [0.41146092 1.58050193]
+w_error: 0.000511527448685438
+Bandwidth chosen 0.7
+Target proportion is estimated as 0.7956839388637612 with error 0.004316061136238836
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.207
+Bayes error: 0.189
+w: [0.42379249 1.58564758]
+w_error: 0.000772074343976516
+Bandwidth chosen 1.2
+Target proportion is estimated as 0.7863820988029979 with error 0.013617901197002125
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.169
+Bayes error: 0.171
+w: [0.36667822 1.62545443]
+w_error: 0.001758269223345754
+Bandwidth chosen 0.5
+Target proportion is estimated as 0.8178067605456321 with error 0.017806760545632017
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.192
+Bayes error: 0.183
+w: [0.32819733 1.66761698]
+w_error: 0.009727678954233987
+Bandwidth chosen 0.7999999999999999
+Target proportion is estimated as 0.8364141416540396 with error 0.036414141654039556
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.204
+Bayes error: 0.196
+w: [0.19717359 1.79483809]
+w_error: 0.07910043402397988
+Bandwidth chosen 0.8999999999999999
+Target proportion is estimated as 0.901906139657014 with error 0.101906139657014
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.203
+Bayes error: 0.186
+w: [0.4733119 1.5022508]
+w_error: 0.014929539603602179
+Bandwidth chosen 1.2
+Target proportion is estimated as 0.7689646302250802 with error 0.03103536977491983
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.2
+Bayes error: 0.17
+w: [0.34938031 1.6266705 ]
+w_error: 0.003273669228042827
+Bandwidth chosen 1.4
+Target proportion is estimated as 0.8285852876492715 with error 0.028585287649271485
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.209
+Bayes error: 0.196
+w: [0.12505385 1.91866544]
+w_error: 0.1771430472977365
+Bandwidth chosen 0.6
+Target proportion is estimated as 0.9359489829437247 with error 0.1359489829437247
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.2
+Bayes error: 0.177
+w: [0.33610625 1.64025604]
+w_error: 0.005702959685379128
+Bandwidth chosen 1.0999999999999999
+Target proportion is estimated as 0.8349928379641838 with error 0.03499283796418373
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.19
+Bayes error: 0.173
+w: [0.411083   1.57870034]
+w_error: 0.0005765082721195134
+Bandwidth chosen 1.5
+Target proportion is estimated as 0.7962569864494264 with error 0.003743013550573604
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.19
+Bayes error: 0.186
+w: [0.45485687 1.57309918]
+w_error: 0.003732930350593684
+Bandwidth chosen 1.0999999999999999
+Target proportion is estimated as 0.7668858526597633 with error 0.033114147340236766
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.207
+Bayes error: 0.198
+w: [0.27007622 1.71101151]
+w_error: 0.02920374309911033
+Bandwidth chosen 2.0
+Target proportion is estimated as 0.8667342655898211 with error 0.0667342655898211
+
+
+Iteration index 0.0
+Iteration index 4.0
+Iteration index 2.0
+Iteration index 1.0
+Iteration index 10.0
+Iteration index 5.0
+Iteration index 6.0
+Iteration index 3.0
+Iteration index 7.0
+Iteration index 8.0
+Iteration index 9.0
+Iteration index 12.0
+Iteration index 11.0
+Iteration index 13.0
+Iteration index 14.0
+Iteration index 15.0
+Iteration index 16.0
+Iteration index 17.0
+Iteration index 18.0
+Iteration index 19.0
+Iteration index 0.0
+Iteration index 1.0
+Iteration index 2.0
+Iteration index 3.0
+Iteration index 4.0
+Iteration index 5.0
+Iteration index 6.0
+Iteration index 7.0
+Iteration index 8.0
+Iteration index 9.0
+Iteration index 10.0
+Iteration index 11.0
+Iteration index 12.0
+Iteration index 13.0
+Iteration index 14.0
+Iteration index 15.0
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.182
+Bayes error: 0.17
+w: [0.48625526 1.52412342]
+w_error: 0.013197224850453122
+Bandwidth chosen 1.0999999999999999
+Target proportion is estimated as 0.7544410939691445 with error 0.04555890603085555
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.208
+Bayes error: 0.185
+w: [0.73796477 1.24677104]
+w_error: 0.23899088928121515
+Bandwidth chosen 0.9999999999999999
+Target proportion is estimated as 0.6420870841487277 with error 0.15791291585127232
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.196
+Bayes error: 0.179
+w: [0.10876099 2.02540403]
+w_error: 0.2657887482918637
+Bandwidth chosen 1.0999999999999999
+Target proportion is estimated as 0.9418128721292883 with error 0.14181287212928828
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.211
+Bayes error: 0.195
+w: [0.58181818 1.35622896]
+w_error: 0.09248217302089343
+Bandwidth chosen 0.9999999999999999
+Target proportion is estimated as 0.7323636363636365 with error 0.0676363636363635
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.205
+Bayes error: 0.178
+w: [0.75488215 1.22626263]
+w_error: 0.26562096838191146
+Bandwidth chosen 0.9999999999999999
+Target proportion is estimated as 0.6376565656565656 with error 0.16234343434343446
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.19
+Bayes error: 0.192
+w: [0.3903568  1.79183542]
+w_error: 0.03689382073605526
+Bandwidth chosen 1.0999999999999999
+Target proportion is estimated as 0.7794484088717454 with error 0.020551591128254665
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.211
+Bayes error: 0.191
+w: [0.7116061  1.18053927]
+w_error: 0.27304566051272083
+Bandwidth chosen 0.6
+Target proportion is estimated as 0.7260316529894488 with error 0.07396834701055122
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.22
+Bayes error: 0.206
+w: [0.53493377 1.41241722]
+w_error: 0.05339442349019788
+Bandwidth chosen 1.7
+Target proportion is estimated as 0.7485811258278146 with error 0.05141887417218549
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.171
+Bayes error: 0.16
+w: [0.69083728 1.29115324]
+w_error: 0.17997264711534372
+Bandwidth chosen 1.5
+Target proportion is estimated as 0.6649439178515009 with error 0.13505608214849918
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.199
+Bayes error: 0.182
+w: [0.68596803 1.28987567]
+w_error: 0.17795481577062788
+Bandwidth chosen 1.9
+Target proportion is estimated as 0.6707353463587921 with error 0.12926465364120798
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.194
+Bayes error: 0.189
+w: [0.51555556 1.48444444]
+w_error: 0.026706172839506236
+Bandwidth chosen 1.0999999999999999
+Target proportion is estimated as 0.7422222222222221 with error 0.05777777777777793
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.2
+Bayes error: 0.196
+w: [0.52081944 1.54035255]
+w_error: 0.018155154987708245
+Bandwidth chosen 0.7999999999999999
+Target proportion is estimated as 0.7239656979514055 with error 0.07603430204859452
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.198
+Bayes error: 0.195
+w: [0.61937687 1.39615877]
+w_error: 0.08967745660970294
+Bandwidth chosen 1.0999999999999999
+Target proportion is estimated as 0.6841177976952626 with error 0.11588220230473745
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.187
+Bayes error: 0.19
+w: [0.53204797 1.53839643]
+w_error: 0.021231665685261518
+Bandwidth chosen 0.9999999999999999
+Target proportion is estimated as 0.7153543381142723 with error 0.08464566188572775
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.202
+Bayes error: 0.198
+w: [0.78144126 1.18617966]
+w_error: 0.31674470774307206
+Bandwidth chosen 1.0999999999999999
+Target proportion is estimated as 0.6405370187561695 with error 0.15946298124383051
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.18
+Bayes error: 0.16
+w: [0.60712758 1.34839629]
+w_error: 0.10620626099555543
+Bandwidth chosen 0.7999999999999999
+Target proportion is estimated as 0.7146500356379187 with error 0.08534996436208131
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.195
+Bayes error: 0.177
+w: [0.53211009 1.42332896]
+w_error: 0.048665731084959814
+Bandwidth chosen 1.8
+Target proportion is estimated as 0.7472477064220184 with error 0.05275229357798161
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.19
+Bayes error: 0.178
+w: [0.34201474 1.61965602]
+w_error: 0.0037486492523347466
+Bandwidth chosen 0.7999999999999999
+Target proportion is estimated as 0.83412285012285 with error 0.03412285012284999
+
+
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.176
+Bayes error: 0.175
+w: [0.76955752 1.26513274]
+w_error: 0.24870884172605534
+Bandwidth chosen 1.8
+Target proportion is estimated as 0.588286725663717 with error 0.21171327433628306
+
+
+Iteration index 16.0
+parameter:
+n-source:200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.191
+Bayes error: 0.187
+w: [0.18571429 1.78235294]
+w_error: 0.07917096250264792
+Bandwidth chosen 0.9999999999999999
+Target proportion is estimated as 0.9089999999999998 with error 0.10899999999999976
+
+
+Iteration index 17.0
+Iteration index 18.0
+Iteration index 19.0
+Iteration index 0.0
+Iteration index 1.0
+Iteration index 2.0
+Iteration index 3.0
+Iteration index 4.0
+Iteration index 5.0
+Iteration index 6.0
+Iteration index 7.0
+Iteration index 8.0
+Iteration index 9.0
+Iteration index 10.0
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.205
+Bayes error: 0.195
+w: [0.03340926 2.06833713]
+w_error: 0.3537284352913165
+Bandwidth chosen 1.2
+Target proportion is estimated as 0.9824601366742597 with error 0.18246013667425964
+
+
+Iteration index 11.0
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.196
+Bayes error: 0.185
+w: [0.46084142 1.69320388]
+w_error: 0.012388642766623761
+Bandwidth chosen 0.9999999999999999
+Target proportion is estimated as 0.7407766990291264 with error 0.059223300970873693
+
+
+Iteration index 12.0
+Iteration index 13.0
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.197
+Bayes error: 0.196
+w: [0.65720687 1.32935026]
+w_error: 0.1394066553964174
+Bandwidth chosen 0.8999999999999999
+Target proportion is estimated as 0.6779686333084392 with error 0.1220313666915609
+
+
+Iteration index 14.0
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.188
+Bayes error: 0.175
+w: [0.50510126 1.5099718 ]
+w_error: 0.0191513504480707
+Bandwidth chosen 0.5
+Target proportion is estimated as 0.7436611125352472 with error 0.056338887464752796
+
+
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.183
+Bayes error: 0.182
+w: [0.55953242 1.41898135]
+w_error: 0.058218345053378445
+Bandwidth chosen 0.7999999999999999
+Target proportion is estimated as 0.7272279432229333 with error 0.07277205677706677
+
+
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.199
+Bayes error: 0.177
+w: [0.57368936 1.45723473]
+w_error: 0.05054991742565776
+Bandwidth chosen 1.5999999999999999
+Target proportion is estimated as 0.7031157556270096 with error 0.09688424437299048
+
+
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.208
+Bayes error: 0.202
+w: [0.46756757 1.54864865]
+w_error: 0.0072023374726078605
+Bandwidth chosen 1.0999999999999999
+Target proportion is estimated as 0.7627094594594592 with error 0.03729054054054082
+
+
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.206
+Bayes error: 0.196
+w: [0.50421377 1.53710175]
+w_error: 0.014816700449653438
+Bandwidth chosen 1.3
+Target proportion is estimated as 0.7378088386433711 with error 0.06219116135662894
+
+
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.242
+Bayes error: 0.181
+w: [0.63419623 1.46087142]
+w_error: 0.0742046359488734
+Bandwidth chosen 0.6
+Target proportion is estimated as 0.6464356024288909 with error 0.15356439757110918
+
+
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.201
+Bayes error: 0.182
+w: [0.23728857 1.78594122]
+w_error: 0.06104914551080386
+Bandwidth chosen 1.4
+Target proportion is estimated as 0.8795760499067462 with error 0.07957604990674616
+
+
+Iteration index 15.0
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.187
+Bayes error: 0.178
+w: [0.52828356 1.46702274]
+w_error: 0.03413962442325287
+Bandwidth chosen 2.0
+Target proportion is estimated as 0.737178926924011 with error 0.06282107307598905
+
+
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.192
+Bayes error: 0.176
+w: [0.56126601 1.3851796 ]
+w_error: 0.0721545300488802
+Bandwidth chosen 1.3
+Target proportion is estimated as 0.7376081386586285 with error 0.062391861341371535
+
+
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.184
+Bayes error: 0.177
+w: [0.59858729 1.38567104]
+w_error: 0.08537381336162708
+Bandwidth chosen 0.7999999999999999
+Target proportion is estimated as 0.7066922300706355 with error 0.09330776992936451
+
+
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.195
+Bayes error: 0.188
+w: [0.48684387 1.51831347]
+w_error: 0.014214547022463126
+Bandwidth chosen 1.3
+Target proportion is estimated as 0.7553609532538956 with error 0.044639046746104416
+
+
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.192
+Bayes error: 0.188
+w: [0.46284735 1.6369515 ]
+w_error: 0.005315203035789333
+Bandwidth chosen 0.7999999999999999
+Target proportion is estimated as 0.748905311778291 with error 0.05109468822170904
+
+
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.211
+Bayes error: 0.188
+w: [0.45059689 1.5020861 ]
+w_error: 0.012147177628519837
+Bandwidth chosen 1.7
+Target proportion is estimated as 0.784839985529965 with error 0.01516001447003501
+
+
+Iteration index 16.0
+Iteration index 17.0
+Iteration index 18.0
+Iteration index 19.0
+Iteration index 0.0
+Iteration index 1.0
+Iteration index 2.0
+Iteration index 3.0
+Iteration index 4.0
+Iteration index 5.0
+Iteration index 6.0
+Iteration index 7.0
+Iteration index 8.0
+Iteration index 9.0
+Iteration index 10.0
+Iteration index 11.0
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.19
+Bayes error: 0.178
+w: [0.17311475 1.87803279]
+w_error: 0.12877914539102353
+Bandwidth chosen 1.8
+Target proportion is estimated as 0.9108459016393441 with error 0.11084590163934405
+
+
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.169
+Bayes error: 0.15
+w: [0.69006145 1.29188387]
+w_error: 0.17907119420614204
+Bandwidth chosen 1.5
+Target proportion is estimated as 0.6653201949565586 with error 0.13467980504344146
+
+
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.201
+Bayes error: 0.182
+w: [0.39472588 1.62997918]
+w_error: 0.0009265675919981559
+Bandwidth chosen 2.0
+Target proportion is estimated as 0.7986897987508672 with error 0.0013102012491328363
+
+
+Iteration index 12.0
+Iteration index 13.0
+parameter:
+n-source:400 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.175
+Bayes error: 0.176
+w: [0.58679085 1.40909762]
+w_error: 0.07133453848176471
+Bandwidth chosen 0.7
+Target proportion is estimated as 0.7080715543188141 with error 0.09192844568118597
+
+
+Iteration index 14.0
+Iteration index 15.0
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.181
+Bayes error: 0.166
+w: [0.4077756  1.59817641]
+w_error: 6.378539578619054e-05
+Bandwidth chosen 1.8
+Target proportion is estimated as 0.7950927626163489 with error 0.004907237383651175
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.174
+Bayes error: 0.169
+w: [0.47920557 1.54476962]
+w_error: 0.009323917571616797
+Bandwidth chosen 1.0999999999999999
+Target proportion is estimated as 0.7550061513955026 with error 0.0449938486044974
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.195
+Bayes error: 0.187
+w: [0.40963409 1.58157634]
+w_error: 0.00043224698285327805
+Bandwidth chosen 1.4
+Target proportion is estimated as 0.7967190814155556 with error 0.003280918584444459
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.179
+Bayes error: 0.178
+w: [0.43682411 1.65450171]
+w_error: 0.004326451447853912
+Bandwidth chosen 0.4
+Target proportion is estimated as 0.7652070406483473 with error 0.03479295935165272
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.183
+Bayes error: 0.172
+w: [0.46849704 1.52885207]
+w_error: 0.009753872483456466
+Bandwidth chosen 0.7
+Target proportion is estimated as 0.766337100591716 with error 0.03366289940828404
+
+
+Iteration index 16.0
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.181
+Bayes error: 0.183
+w: [0.57656653 1.41297832]
+w_error: 0.06615284704077792
+Bandwidth chosen 0.8999999999999999
+Target proportion is estimated as 0.7153202760158918 with error 0.08467972398410828
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.196
+Bayes error: 0.189
+w: [0.36940107 1.60284641]
+w_error: 0.0009443967391540081
+Bandwidth chosen 1.2
+Target proportion is estimated as 0.8194552283059894 with error 0.019455228305989336
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.205
+Bayes error: 0.191
+w: [0.21245949 1.76809507]
+w_error: 0.06342739481638962
+Bandwidth chosen 0.7999999999999999
+Target proportion is estimated as 0.8950981274756933 with error 0.09509812747569324
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.2
+Bayes error: 0.199
+w: [0.08610687 1.86931298]
+w_error: 0.17105837655148262
+Bandwidth chosen 1.7
+Target proportion is estimated as 0.9580229007633585 with error 0.15802290076335845
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.205
+Bayes error: 0.198
+w: [0.68872668 1.30510949]
+w_error: 0.17032351085879016
+Bandwidth chosen 0.8999999999999999
+Target proportion is estimated as 0.6590802919708032 with error 0.14091970802919684
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.194
+Bayes error: 0.188
+w: [0.46330381 1.52606854]
+w_error: 0.009473233310731972
+Bandwidth chosen 1.2
+Target proportion is estimated as 0.7706646130150172 with error 0.029335386984982836
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.197
+Bayes error: 0.185
+w: [0.30086128 1.70970505]
+w_error: 0.021863683057631957
+Bandwidth chosen 1.2
+Target proportion is estimated as 0.848441129769523 with error 0.04844112976952297
+
+
+Iteration index 17.0
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.204
+Bayes error: 0.208
+w: [0.5940497  1.42890893]
+w_error: 0.06692744113525097
+Bandwidth chosen 0.7
+Target proportion is estimated as 0.6948069663385421 with error 0.10519303366145794
+
+
+Iteration index 18.0
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.189
+Bayes error: 0.176
+w: [0.41439814 1.56263708]
+w_error: 0.001603294357280645
+Bandwidth chosen 1.5999999999999999
+Target proportion is estimated as 0.7969449103341504 with error 0.003055089665849664
+
+
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.178
+Bayes error: 0.17
+w: [0.37262774 1.67965328]
+w_error: 0.007093886528317881
+Bandwidth chosen 0.8999999999999999
+Target proportion is estimated as 0.8062335766423355 with error 0.006233576642335481
+
+
+Iteration index 19.0
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.188
+Bayes error: 0.17
+w: [0.65259057 1.3652253 ]
+w_error: 0.11892115930554095
+Bandwidth chosen 1.8
+Target proportion is estimated as 0.6655473315153878 with error 0.13445266848461224
+
+
+Iteration index 0.0
+Iteration index 1.0
+Iteration index 2.0
+Iteration index 3.0
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.214
+Bayes error: 0.202
+w: [0.46034045 1.56450321]
+w_error: 0.004900991890029289
+Bandwidth chosen 1.4
+Target proportion is estimated as 0.7646509448429806 with error 0.03534905515701947
+
+
+Iteration index 4.0
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.203
+Bayes error: 0.194
+w: [0.33660359 1.74434133]
+w_error: 0.024853523614374883
+Bandwidth chosen 1.3
+Target proportion is estimated as 0.8220208509099676 with error 0.022020850909967526
+
+
+Iteration index 5.0
+Iteration index 6.0
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.214
+Bayes error: 0.211
+w: [0.48706303 1.56693034]
+w_error: 0.00867357299944965
+Bandwidth chosen 0.5
+Target proportion is estimated as 0.7442919112018372 with error 0.0557080887981628
+
+
+Iteration index 7.0
+parameter:
+n-source:800 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.183
+Bayes error: 0.172
+w: [0.52325142 1.50119723]
+w_error: 0.02495289984113995
+Bandwidth chosen 1.4
+Target proportion is estimated as 0.7318336483931948 with error 0.06816635160680529
+
+
+Iteration index 8.0
+Iteration index 9.0
+Iteration index 10.0
+Iteration index 11.0
+Iteration index 12.0
+Iteration index 13.0
+Iteration index 14.0
+Iteration index 15.0
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.219
+Bayes error: 0.198
+w: [0.17380778 1.83033354]
+w_error: 0.10421645809219512
+Bandwidth chosen 0.7999999999999999
+Target proportion is estimated as 0.9128788506259757 with error 0.11287885062597569
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.19
+Bayes error: 0.181
+w: [0.44635792 1.56341634]
+w_error: 0.0034874215299447817
+Bandwidth chosen 2.0
+Target proportion is estimated as 0.7748682220153595 with error 0.025131777984640502
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.206
+Bayes error: 0.19
+w: [0.39694817 1.6260984 ]
+w_error: 0.0006904398868711848
+Bandwidth chosen 0.5
+Target proportion is estimated as 0.7978045251249671 with error 0.00219547487503291
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.245
+Bayes error: 0.215
+w: [0.66858451 1.355456  ]
+w_error: 0.13193940726763692
+Bandwidth chosen 0.4
+Target proportion is estimated as 0.6540075178583812 with error 0.14599248214161886
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.224
+Bayes error: 0.182
+w: [0.75155779 1.24720309]
+w_error: 0.24805853921576154
+Bandwidth chosen 0.7
+Target proportion is estimated as 0.625160550622049 with error 0.17483944937795104
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.187
+Bayes error: 0.185
+w: [0.51716563 1.54310852]
+w_error: 0.01696442551468466
+Bandwidth chosen 0.6
+Target proportion is estimated as 0.7262254452986121 with error 0.07377455470138794
+
+
+Iteration index 16.0
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.197
+Bayes error: 0.176
+w: [0.2002188  1.79380525]
+w_error: 0.07747300537136581
+Bandwidth chosen 1.3
+Target proportion is estimated as 0.9002660116832595 with error 0.10026601168325944
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.19
+Bayes error: 0.192
+w: [0.23409946 1.81735639]
+w_error: 0.07476679003173016
+Bandwidth chosen 0.7
+Target proportion is estimated as 0.8791461540893427 with error 0.07914615408934267
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.188
+Bayes error: 0.167
+w: [0.50283014 1.47528953]
+w_error: 0.02612673843440786
+Bandwidth chosen 1.4
+Target proportion is estimated as 0.7542417714040611 with error 0.04575822859593892
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.176
+Bayes error: 0.17
+w: [0.5440857  1.48411519]
+w_error: 0.03418997830477229
+Bandwidth chosen 1.3
+Target proportion is estimated as 0.7197958655553216 with error 0.08020413444467844
+
+
+Iteration index 17.0
+Iteration index 18.0
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.19
+Bayes error: 0.183
+w: [0.28673222 1.68017355]
+w_error: 0.0192573871941282
+Bandwidth chosen 0.7
+Target proportion is estimated as 0.8600388342596552 with error 0.06003883425965517
+
+
+Iteration index 19.0
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.183
+Bayes error: 0.18
+w: [0.46215873 1.54053721]
+w_error: 0.007399530997509051
+Bandwidth chosen 0.7
+Target proportion is estimated as 0.7683429352988108 with error 0.03165706470118923
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.179
+Bayes error: 0.173
+w: [0.40392104 1.63931785]
+w_error: 0.001561267593532245
+Bandwidth chosen 0.9999999999999999
+Target proportion is estimated as 0.7909708607492951 with error 0.00902913925070492
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.208
+Bayes error: 0.201
+w: [0.43108618 1.55071978]
+w_error: 0.003394890841570998
+Bandwidth chosen 0.9999999999999999
+Target proportion is estimated as 0.7879594864940794 with error 0.012040513505920614
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.209
+Bayes error: 0.199
+w: [0.35270913 1.65216382]
+w_error: 0.0049574908374813206
+Bandwidth chosen 0.4
+Target proportion is estimated as 0.8229841048845574 with error 0.022984104884557377
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.212
+Bayes error: 0.19
+w: [0.44639112 1.54947233]
+w_error: 0.004705181075637068
+Bandwidth chosen 1.5999999999999999
+Target proportion is estimated as 0.7776414254955931 with error 0.022358574504406925
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.188
+Bayes error: 0.183
+w: [0.47190811 1.47540814]
+w_error: 0.020693906930761626
+Bandwidth chosen 0.8999999999999999
+Target proportion is estimated as 0.7764335345657841 with error 0.023566465434215922
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.192
+Bayes error: 0.176
+w: [0.42149252 1.57418488]
+w_error: 0.0011283489770724591
+Bandwidth chosen 2.0
+Target proportion is estimated as 0.7900440367397524 with error 0.009955963260247613
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.214
+Bayes error: 0.196
+w: [0.57707582 1.43689626]
+w_error: 0.057958678154017985
+Bandwidth chosen 1.5999999999999999
+Target proportion is estimated as 0.7067733468772528 with error 0.09322665312274725
+
+
+parameter:
+n-source:1600 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.206
+Bayes error: 0.211
+w: [0.35907781 1.69433237]
+w_error: 0.010573222193616
+Bandwidth chosen 1.0999999999999999
+Target proportion is estimated as 0.8132795389048991 with error 0.01327953890489908
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.204
+Bayes error: 0.202
+w: [0.47960736 1.51585904]
+w_error: 0.013417034162106836
+Bandwidth chosen 1.3
+Target proportion is estimated as 0.7612454594785786 with error 0.038754540521421466
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.188
+Bayes error: 0.172
+w: [0.34319739 1.64540826]
+w_error: 0.0052884464592761644
+Bandwidth chosen 1.5
+Target proportion is estimated as 0.8299027922135118 with error 0.029902792213511775
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.182
+Bayes error: 0.187
+w: [0.67987254 1.31418082]
+w_error: 0.16002124777852497
+Bandwidth chosen 0.8999999999999999
+Target proportion is estimated as 0.6632506301421981 with error 0.13674936985780195
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.179
+Bayes error: 0.177
+w: [0.26499153 1.70530207]
+w_error: 0.029315812961875826
+Bandwidth chosen 1.3
+Target proportion is estimated as 0.8702369612446854 with error 0.07023696124468537
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.198
+Bayes error: 0.186
+w: [0.44288834 1.53727588]
+w_error: 0.005773724911216047
+Bandwidth chosen 1.5999999999999999
+Target proportion is estimated as 0.7825695039363414 with error 0.01743049606365865
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.229
+Bayes error: 0.208
+w: [0.27523371 1.71845221]
+w_error: 0.029597551291403824
+Bandwidth chosen 1.4
+Target proportion is estimated as 0.8629852170328053 with error 0.06298521703280524
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.195
+Bayes error: 0.189
+w: [0.37539781 1.63404202]
+w_error: 0.0017641270784408375
+Bandwidth chosen 2.0
+Target proportion is estimated as 0.8108933536038672 with error 0.010893353603867117
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.204
+Bayes error: 0.183
+w: [0.08877897 1.8700296 ]
+w_error: 0.16977451362941154
+Bandwidth chosen 1.0999999999999999
+Target proportion is estimated as 0.9566370194340951 with error 0.15663701943409503
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.181
+Bayes error: 0.181
+w: [0.49527899 1.50283185]
+w_error: 0.01851973667932328
+Bandwidth chosen 0.5
+Target proportion is estimated as 0.7528248276803903 with error 0.04717517231960977
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.216
+Bayes error: 0.199
+w: [0.52999362 1.4653297 ]
+w_error: 0.03503442938166462
+Bandwidth chosen 1.7
+Target proportion is estimated as 0.7363281756259946 with error 0.06367182437400543
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.208
+Bayes error: 0.196
+w: [0.21056334 1.82681242]
+w_error: 0.08733012506903681
+Bandwidth chosen 0.7999999999999999
+Target proportion is estimated as 0.892283693215761 with error 0.09228369321576091
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.189
+Bayes error: 0.176
+w: [0.52948996 1.46933523]
+w_error: 0.033840930597630416
+Bandwidth chosen 1.8
+Target proportion is estimated as 0.7355859515821451 with error 0.06441404841785492
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.202
+Bayes error: 0.192
+w: [0.48678713 1.52489154]
+w_error: 0.013173286511437336
+Bandwidth chosen 0.9999999999999999
+Target proportion is estimated as 0.753868256597958 with error 0.04613174340204207
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.197
+Bayes error: 0.179
+w: [0.27153013 1.72483661]
+w_error: 0.03208868651868858
+Bandwidth chosen 2.0
+Target proportion is estimated as 0.8645743490132705 with error 0.06457434901327042
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.195
+Bayes error: 0.197
+w: [0.38832236 1.60634877]
+w_error: 0.0001766740421362695
+Bandwidth chosen 0.4
+Target proportion is estimated as 0.8066882727984759 with error 0.006688272798475836
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.179
+Bayes error: 0.172
+w: [0.38303089 1.62006169]
+w_error: 0.0006904222977001876
+Bandwidth chosen 1.2
+Target proportion is estimated as 0.8080057685374354 with error 0.008005768537435398
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.188
+Bayes error: 0.185
+w: [0.40369471 1.56509272]
+w_error: 0.0012321691807927655
+Bandwidth chosen 1.7
+Target proportion is estimated as 0.8035772926751883 with error 0.0035772926751882483
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.192
+Bayes error: 0.182
+w: [0.33820992 1.70802121]
+w_error: 0.015486594405461879
+Bandwidth chosen 1.0999999999999999
+Target proportion is estimated as 0.8251877452353531 with error 0.025187745235353054
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.205
+Bayes error: 0.2
+w: [0.41226173 1.62331289]
+w_error: 0.0006938411537717026
+Bandwidth chosen 0.8999999999999999
+Target proportion is estimated as 0.78781403908824 with error 0.012185960911760052
+
+
+parameter:
+n-source:3200 n-target:500 dimension:3 prop-of-success-target:0.8 dist-between-means: 1.0
+Prediction error: 0.219
+Bayes error: 0.21
+w: [0.31989098 1.67587158]
+w_error: 0.012173951317857933
+Bandwidth chosen 1.2
+Target proportion is estimated as 0.8405543388329196 with error 0.04055433883291959
+
+
