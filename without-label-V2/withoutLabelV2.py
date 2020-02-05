@@ -111,7 +111,7 @@ class WithoutLabelV2():
         self.prop_target = self.w[1]*self.prop_source
         return self.w
     
-    def _classify(self, x_classify = 'None', bandwidth = None, kernel = 'gaussian'):
+    def _classify(self, x_classify = 'None', classifier = 'None', bandwidth = None, kernel = 'gaussian'):
         '''Classifier for the target distribution
         param: x_classify, the numpy list (shape (n, d)) of features to classify
         param: bandwidth float; default = 0.01
@@ -132,7 +132,7 @@ class WithoutLabelV2():
         self.x_classify = x_classify
         
         if bandwidth == None:
-            bandwidths =  np.linspace(0.1, 2, 20)
+            bandwidths =  np.linspace(0.1, 2, 100)
             grid = GridSearchCV(KDEClassifier(), {'bandwidth': bandwidths}, cv = 5)
             grid.fit(self.x_source, self.y_source)
             self.bandwidth = grid.best_params_['bandwidth']
@@ -140,7 +140,10 @@ class WithoutLabelV2():
             self.bandwidth = bandwidth
         kde = KDEClassifier(bandwidth = self.bandwidth, kernel = 'gaussian')
         kde.fit(self.x_source, self.y_source)   
-        self._estimateProportionRatio(classifier = lambda x: kde.predict(x))
+        if type(classifier) is str:
+            self._estimateProportionRatio(classifier = lambda x: kde.predict(x))
+        else:
+            self._estimateProportionRatio(classifier = classifier)
         kde = KDEClassifier(bandwidth = self.bandwidth, kernel = 'gaussian')
         kde.fit(self.x_source, self.y_source, weights= self.w)
         self._targetClassifier = lambda x: kde.predict(x)
