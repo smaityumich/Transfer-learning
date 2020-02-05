@@ -79,7 +79,7 @@ class WithoutLabelV2():
         self.m, self.d = x_source.shape
         self.n, _ = x_target.shape
         self.x_source, self.y_source, self.x_target = x_source, y_source, x_target
-        
+        self.prop_source = np.mean(y_source) 
         
     def _estimateProportionRatio(self, classifier = None, n_neighbors = 5):
         
@@ -108,9 +108,10 @@ class WithoutLabelV2():
         print(f'Target proportion of class 1 with classifier for source: {propTarget}')
         xi = np.array([1-propTarget,propTarget])
         self.w = np.matmul(np.linalg.inv(confusionMatrix),xi)
+        self.prop_target = self.w[1]*self.prop_source
         return self.w
     
-    def _classify(self, x_classify = None, bandwidth = None, kernel = 'gaussian'):
+    def _classify(self, x_classify = 'None', bandwidth = None, kernel = 'gaussian'):
         '''Classifier for the target distribution
         param: x_classify, the numpy list (shape (n, d)) of features to classify
         param: bandwidth float; default = 0.01
@@ -119,7 +120,7 @@ class WithoutLabelV2():
         '''
         
         
-        if x_classify == None:
+        if type(x_classify) is str:
             x_classify = self.x_target
         else:
             x_classify = np.array(x_classify)

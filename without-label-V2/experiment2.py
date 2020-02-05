@@ -40,16 +40,19 @@ w_true = [(1-prop)/0.5, prop/0.5]
 w_true = np.array(w_true)
 w_error = np.sum((w - w_true)**2)
 bandwidth = classifier_noLabel.bandwidth
+prop_predicted = classifier_noLabel.prop_target
+prop_error = np.abs(prop_predicted-prop)
 
 with open('.out/experiment.out','a') as fh:
     fh.writelines(f'parameter:\n{fname}\n')
     fh.writelines(f'Prediction error: {error}\n')
     fh.writelines(f'Bayes error: {bayes_error}\n')
     fh.writelines(f'w: {str(w)}\nw_error: {w_error}\n')
-    fh.writelines(f'Bandwidth chosen {bandwidth}\n\n\n')
+    fh.writelines(f'Bandwidth chosen {bandwidth}\n')
+    fh.writelines(f'Target proportion is estimated as {prop_predicted} with error {prop_error}\n\n\n')
 os.system(f'echo Excess risk: {error-bayes_error}')
 os.system(f'echo w_error: {w_error}')
-    
+os.system(f'echo Target proportion estimation error {prop_error}')    
 
 
 
