@@ -1,9 +1,3 @@
-Confusion matrix: [[0.239 0.197]
- [0.252 0.312]]
-
-Target proportion of class 1 with classifier for source: 0.562
-         482270 function calls (481219 primitive calls) in 25.690 seconds
-
    Ordered by: standard name
 
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
