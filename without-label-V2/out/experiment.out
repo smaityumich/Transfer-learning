@@ -99008,33 +99008,3 @@ Bandwidth chosen 1.7
 Target proportion is estimated as 0.5904421221864949 with error 0.2095578778135051
 
 
-parameter:
-n-source:1000 n-target:100 dimension:3 prop-of-success-target:0.8 dist-between-means: 0.8 index 1
-Prediction error: 0.196
-Bayes error: 0.194
-w: [0.34511144 1.59014673]
-w_error: 0.0031098414298830835
-Bandwidth chosen 0.5414141414141413
-Target proportion is estimated as 0.836417179429136 with error 0.036417179429135915
-
-
-parameter:
-n-source:1000 n-target:100 dimension:3 prop-of-success-target:0.8 dist-between-means: 0.8 index 1
-Prediction error: 0.206
-Bayes error: 0.196
-w: [0.68406615 1.30476133]
-w_error: 0.16785945057439183
-Bandwidth chosen 0.7141414141414141
-Target proportion is estimated as 0.6641235183405414 with error 0.13587648165945865
-
-
-parameter:
-n-source:1000 n-target:100 dimension:3 prop-of-success-target:0.8 dist-between-means: 0.8 index 1
-Prediction error: 0.188
-Bayes error: 0.19
-w: [0.5257308  1.47049016]
-w_error: 0.03258103163554394
-Bandwidth chosen 1.2323232323232323
-Target proportion is estimated as 0.7381860620206734 with error 0.06181393797932666
-
-

@@ -2,13 +2,13 @@ import numpy as np
 import multiprocessing as mp
 import os
 
-m_vec = [200, 400, 800, 1600, 3200, 6400, 12800, 25600]
+m_vec = [25, 50, 100, 200, 400, 800, 1600, 3200]
 n_vec = [500]
 n_test_vec = [1000]
-d = [3, 7]
-prop = [0.6, 0.7, 0.8]
-distance = [0.5, 0.6, 0.7, 0.8]
-iter_vec = range(50)
+d = [5]
+prop = [0.8]
+distance = [0.5]
+iter_vec = range(100)
 par_list = np.meshgrid(m_vec, n_vec, n_test_vec, d, prop, distance, iter_vec)
 par_list = np.array(par_list)
 par_list = par_list.reshape((7, -1))

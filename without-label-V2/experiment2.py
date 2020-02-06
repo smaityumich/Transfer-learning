@@ -36,7 +36,7 @@ x_target_test, y_target_test, bayes_target_test = data_generate._getData(n_test,
 
 ##Buliding classifier 
 classifier_noLabel = WithoutLabelV2(x_source = x_source, y_source = y_source, x_target = x_target_train)
-cProfile.run('predicted_labels = classifier_noLabel._classify(x_target_test)')
+predicted_labels = classifier_noLabel._classify(x_target_test)
 error = np.mean((y_target_test-predicted_labels)**2)
 bayes_error = np.mean((bayes_target_test-y_target_test)**2)
 w = classifier_noLabel.w
@@ -47,7 +47,7 @@ bandwidth = classifier_noLabel.bandwidth
 prop_predicted = classifier_noLabel.prop_target
 prop_error = np.abs(prop_predicted-prop)
 
-with open('./out/experiment.out','a') as fh:
+with open('./out/experiment2.out','a') as fh:
     fh.writelines(f'parameter:\n{fname}\n')
     fh.writelines(f'Prediction error: {error}\n')
     fh.writelines(f'Bayes error: {bayes_error}\n')
