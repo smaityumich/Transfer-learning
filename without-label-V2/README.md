@@ -23,7 +23,7 @@ Look at the output.target.shift.nolabel.ipynb for the simulation results
   - m = [25, 50, 100, 200, 400, 800, 1600, 3200]
   - n = 500
   - n_test = 1000
-  - d = [3, 5]
+  - d = 5
   - prop_target = 0.8
   - distance = 0.5
 - Plots for excess-risk CI, and CI for estimation error of prop_target are given  
