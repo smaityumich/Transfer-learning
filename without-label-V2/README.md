@@ -30,7 +30,8 @@ Look at the output.target.shift.nolabel.ipynb for the simulation results
 
 
 
-##Efficiency
+## Efficiency
+
 Efficiency test of the algorithm is given in cprofile-without-label-classifier.out file
 
 - cProfile module is used to test the efficiency
