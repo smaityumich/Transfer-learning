@@ -34,4 +34,5 @@ Look at the output.target.shift.nolabel.ipynb for the simulation results
 Efficiency test of the algorithm is given in cprofile-without-label-classifier.out file
 
 - cProfile module is used to test the efficiency
-- Majority of the time is spent on calculating kernel density at a point (in the method sklearn.neighbors.kd_tree.BinaryTree.kernel_density; about 0.023 seconds in ARM v8 model CPU) 
+- Majority of the time is spent on calculating kernel density at a point 
+  - In the method sklearn.neighbors.kd_tree.BinaryTree.kernel_density; about 0.023 seconds in ARM v8 model CPU 
