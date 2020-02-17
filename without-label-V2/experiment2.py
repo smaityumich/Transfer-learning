@@ -34,6 +34,12 @@ x_target_train, _, _ = data_generate._getData(n, prop, distance)
 x_target_test, y_target_test, bayes_target_test = data_generate._getData(n_test, prop, distance)
 
 
+## Defining all the experiments
+
+
+
+
+
 ##Buliding classifier 
 classifier_noLabel = WithoutLabelV2(x_source = x_source, y_source = y_source, x_target = x_target_train)
 predicted_labels = classifier_noLabel._classify(x_target_test)
