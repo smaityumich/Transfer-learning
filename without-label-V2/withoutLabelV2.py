@@ -2,7 +2,7 @@ import numpy as np
 from kde-classifier import *
 
 
-class WithoutLabelV2():
+class WithoutLabelClassifier():
     
     
     def __init__(self, x_source = np.random.random((100,3)), y_source = np.random.binomial(1, 0.5, (100,)), x_target = np.random.random((100,3))):
