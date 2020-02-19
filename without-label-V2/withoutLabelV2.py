@@ -1,5 +1,5 @@
 import numpy as np
-from kde-classifier import *
+from kdeClassifier import *
 
 
 class WithoutLabelClassifier():

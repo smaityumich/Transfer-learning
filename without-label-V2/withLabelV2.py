@@ -96,7 +96,8 @@ class WithLabelOptimalClassifier():
         grid = GridSearchCV(WithLabelClassifier(), {'bandwidth': bandwidths}, cv = 5)
         grid.fit(x_target, y_target)
         self.bandwidth = grid.best_params_['bandwidth']
-        self._classifier = WithLabelClassifier(bandwidth = self.bandwidth, data = (x_source, y_source)).fit(x_target, y_target)
+        self._classifier = WithLabelClassifier(bandwidth = self.bandwidth)
+        self._classifier.fit(x_target, y_target)
 
 
     def predict(self, x = np.random.normal(0, 1, (10, 3))):
