@@ -9,5 +9,10 @@ xtest = np.random.normal(0, 1, (50, 3))
 param = {'bandwidth': np.linspace(0.1, 2, 20)}
 
 
-#grid = GridSearchCV(WithLabelClassifier(), param, cv = 5)
+np.save('x_source.npy', xs), np.save('y_source.npy', ys)
+
+ 
+
+
+grid = GridSearchCV(WithLabelClassifier(), param, cv = 5)
 

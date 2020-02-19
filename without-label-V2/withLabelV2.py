@@ -10,8 +10,7 @@ class WithLabelClassifier(BaseEstimator, ClassifierMixin):
     def __init__(self, bandwidth = 1.0, kernel = 'gaussian'):
         self.bandwidth = bandwidth
         self.kernel = kernel
-        global sourceData    
-        x_source, y_source = sourceData
+        x_source, y_source = np.load('x_source.npy'), np.load('y_source.npy')
         x_source = np.array(x_source)
         y_source = np.array(y_source)
 
@@ -91,9 +90,10 @@ class WithLabelOptimalClassifier():
 
 
     def fit(self, x_source = np.random.random((100,3)), y_source = np.random.binomial(1, 0.5, (100,)), x_target = np.random.random((100,3)), y_target = np.random.binomial(1, 0.5, (100,))):
-
+        np.save('x_source.npy', x_source)
+        np.save('y_source.npy', y_source)
         bandwidths = np.linspace(0.1, 2, 100)
-        grid = GridSearchCV(WithLabelClassifier(), {'bandwidth': bandwidths, 'data': [(x_source, y_source)] }, cv = 5)
+        grid = GridSearchCV(WithLabelClassifier(), {'bandwidth': bandwidths}, cv = 5)
         grid.fit(x_target, y_target)
         self.bandwidth = grid.best_params_['bandwidth']
         self._classifier = WithLabelClassifier(bandwidth = self.bandwidth, data = (x_source, y_source)).fit(x_target, y_target)
