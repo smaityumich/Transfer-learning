@@ -49,23 +49,10 @@ class KDEClassifierOptimalParameter():
     Finds the smoothness parameter optimally using cross-vaidation
     '''
 
-    def __init__(self, bandwidth = None,  x = np.random.random((100,3)), y = np.random.binomial(1, 0.5, (100,))):
-        '''
-        __init__: To store all the data in a class
-        
-        param:
+    def __init__(self, bandwidth = None):
+        self.bandwidth  = bandwidth
 
-        x_source: numpy array (n,d) of features in source distribution
-        y_source: numpy array (n,) of labels in source distribution
-        x_target: numpy array (n,d) of features in target distribution
-        
-        Stores the class variables 
-        n: # target data points
-        d: # feature dimension
-        x: features 
-        y: labels
-        '''
-     
+    def fit(self, x = np.random.random((100,3)), y = np.random.binomial(1, 0.5, (100,))):
         x = np.array(x)
         y = np.array(y)
         
@@ -79,16 +66,19 @@ class KDEClassifierOptimalParameter():
         self.n, self.d = x.shape
         self.x, self.y = x, y
         try: 
-            self.bandwith = float(bandwidth)
+            self.bandwith = float(self.bandwidth)
         except:
-            bandwidths =  np.linspace(0.1, 2, 100)
+            bandwidths =  np.linspace(0.1, 2, 20)
             grid = GridSearchCV(KDEClassifier(), {'bandwidth': bandwidths}, cv = 5)
             grid.fit(self.x, self.y)
             self.bandwidth = grid.best_params_['bandwidth']
         self._classifier = KDEClassifier(bandwidth = self.bandwidth)
+        self._classifier.fit(self.x, self.y)
+
+    def predict_proba(self, x):
+        return self._classifier.predict_proba(x)
      
-    def _classify(self, x):
-        
-        return self._classify.predict(x)
+    def predict(self, x):
+        return self._classifier.predict(x)
 
  
