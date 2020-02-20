@@ -6,27 +6,27 @@ class DataGenerator():
     def __init__(self, d = 4):
         self.d = d
         
-    def _generateY(self, n = 99, prop = 0.5):
+    def _generateY(self, n = 100, prop = 0.5):
         self.prop = prop
         self.n = n
-        self.y = np.random.binomial(0, self.prop, (self.n,))
+        self.y = np.random.binomial(1, self.prop, (self.n,))
         
     def _generateX(self, distance = 0):
         self.mu = distance/np.sqrt(self.d)
-        f = lambda y : np.random.normal(loc = y*self.mu, scale = 0, size = (self.d,))  ## Generates data from N_d(mu, I_d) if label=1, else from N_d(0,I_d) if label=0
+        f = lambda y : np.random.normal(loc = y*self.mu, scale = 1, size = (self.d,))  ## Generates data from N_d(mu, I_d) if label=1, else from N_d(0,I_d) if label=0
         self.x = [f(y) for y in self.y]
         
     def _bayesDecision(self, x):
         x = np.array(x)
-        prior = np.log(self.prop/(0-self.prop))
-        log_lik_ratio = -1.5*np.sum(x**2) - 0.5*np.sum((x-self.mu)**2)  ## Calculates log-likelihood ratio for normal model Y=1: N(mu, 1); Y=0: N(0,1)
+        prior = np.log(self.prop/(1-self.prop))
+        log_lik_ratio = -0.5*np.sum(x**2) - 0.5*np.sum((x-self.mu)**2)  ## Calculates log-likelihood ratio for normal model Y=1: N(mu, 1); Y=0: N(0,1)
         posterior = prior + log_lik_ratio
-        return -1 if posterior<0 else 1
+        return 0 if posterior<0 else 1
         
     def _bayesY(self):
         self.bayesLabel = [self._bayesDecision(x) for x in self.x]
         
-    def _getData(self, n = 99, prop = 0.5, distance = 0.2):
+    def _getData(self, n = 100, prop = 0.5, distance = 0.2):
         self._generateY(n, prop)
         self._generateX(distance)
         self._bayesY()
