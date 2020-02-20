@@ -57,7 +57,7 @@ class Experiments():
     def _QUnlabeledClassifier(self):
 
         cl = WithoutLabelClassifier()
-        cl.fit(x_source=self.data['source-data']['x'], y_source=self.data['source-data']['y'], x_target=self.data['target-data']['x'], y_target=self.data['target-data']['y'])
+        cl.fit(x_source=self.data['source-data']['x'], y_source=self.data['source-data']['y'], x_target=self.data['target-data']['x'])
         y_predict = cl.predict(self.data['test-data']['x'])
         self.output['unlabeled-data'] = dict()
         s = self.output['unlabeled-data']
