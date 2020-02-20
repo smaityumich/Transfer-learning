@@ -1,7 +1,8 @@
 import numpy as np
-from withLabelV2 import *
+from experiments import *
 
 
-cl = WithLabelOptimalClassifier()
-cl.fit()
-
+e = Experiments()
+e._getData()
+e._QLabledClassifier()
+e._QUnlabeledClassifier()

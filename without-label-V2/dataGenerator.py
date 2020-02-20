@@ -19,14 +19,14 @@ class DataGenerator():
     def _bayesDecision(self, x):
         x = np.array(x)
         prior = np.log(self.prop/(1-self.prop))
-        log_lik_ratio = -0.5*np.sum(x**2) - 0.5*np.sum((x-self.mu)**2)  ## Calculates log-likelihood ratio for normal model Y=1: N(mu, 1); Y=0: N(0,1)
+        log_lik_ratio = 0.5*np.sum(x**2) - 0.5*np.sum((x-self.mu)**2)  ## Calculates log-likelihood ratio for normal model Y=1: N(mu, 1); Y=0: N(0,1)
         posterior = prior + log_lik_ratio
         return 0 if posterior<0 else 1
         
     def _bayesY(self):
         self.bayesLabel = [self._bayesDecision(x) for x in self.x]
         
-    def _getData(self, n = 100, prop = 0.5, distance = 0.2):
+    def _getData(self, n = 100, prop = 0.5, distance = 0.4):
         self._generateY(n, prop)
         self._generateX(distance)
         self._bayesY()
