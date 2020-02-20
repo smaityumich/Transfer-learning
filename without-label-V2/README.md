@@ -1,6 +1,5 @@
 # Classifier for target-shift setup
 ### No labels observed in target distribution (Ref: Lipton et al.)
-![](meme.jpg)
 
 ## Simulation Results
 Look at the output.target.shift.nolabel.ipynb for the simulation results
@@ -36,4 +35,4 @@ Efficiency test of the algorithm is given in cprofile-without-label-classifier.o
 
 - cProfile module is used to test the efficiency
 - Majority of the time is spent on calculating kernel density at a point 
-  - In the method sklearn.neighbors.kd_tree.BinaryTree.kernel_density; about 0.023 seconds in ARM v8 model CPU 
+  - In the method sklearn.neighbors.kd_tree.BinaryTree.kernel_density; each about 0.023 seconds in ARM v8 model CPU 
