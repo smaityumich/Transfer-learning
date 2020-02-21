@@ -29,7 +29,6 @@ for n_source in n_sources:
     with open(job_file,'w') as fh:
         fh.writelines("#!/bin/bash\n")
         fh.writelines(f"#SBATCH --job-name=n_source-{n_source}.job\n")
-        fh.writelines(f"#SBATCH --output={log_dir}/\n")
         fh.writelines('#SBATCH --nodes=1\n')
         fh.writelines('#SBATCH --cpus-per-task=1\n')
         fh.writelines('#SBATCH --mem-per-cpu=6gb\n')
@@ -41,4 +40,5 @@ for n_source in n_sources:
         fh.writelines(f"python3 unit_experiment.py {n_source} 200 2500 0.5 0.8 0.8 5 100")
 
     os.system("sbatch %s" %job_file)
-    os.system(f'rm {job_file}') 
+    os.system(f'rm {job_file}')
+    os.system(f'mv *.out {log_dir}') 
