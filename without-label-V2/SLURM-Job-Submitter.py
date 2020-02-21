@@ -41,4 +41,3 @@ for n_target in n_targets:
 
     os.system("sbatch %s" %job_file)
     os.system(f'rm {job_file}')
-    os.system(f'mv *.out {log_dir}') 
