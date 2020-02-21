@@ -4,6 +4,7 @@ from withoutLabelV3 import *
 import numpy as np
 from dataGenerator import *
 from mixtureClassifier import *
+import multiprocessing as mp
 
 
 class Experiments():
@@ -42,6 +43,7 @@ class Experiments():
         s = self.data['test-data'] 
         s['x'], s['y'], s['bayes'] = datageneretor._getData(n = n_test, prop = prop_target, distance = dist)
         self.output = dict()
+        self.workers = mp.cpu_count()
         self.output['test-data'] = dict()
         self.output['test-data']['bayes-error'] = np.mean((s['y']-s['bayes'])**2)
 
@@ -70,7 +72,7 @@ class Experiments():
 
 
     def _MixtureClassifier(self):
-        cl = OptimalMixtureClassifier()
+        cl = OptimalMixtureClassifier(nodes = self.workers)
         cl.fit(x_source=self.data['source-data']['x'], y_source=self.data['source-data']['y'], x_target=self.data['target-data']['x'], y_target=self.data['target-data']['y'])
         y_predict = cl.predict(self.data['test-data']['x'])
         self.output['mixture-classifier'] = dict()
