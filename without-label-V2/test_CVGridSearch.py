@@ -1,16 +1,17 @@
 import numpy as np
 from CVGridSearch import *
-import sklearn.linear_model
+from withLabelV3 import *
 
-param_dict = {'penalty': ['l1','l2'], 'C': [1, 2]}
-method = sklearn.linear_model.LogisticRegression()
+
+param_dict = {'bandwidth': np.linspace(0.1, 2, 20)}
+method = WithLabelClassifier()
 grid = CVGridSearch(method, param_dict)
-arg = grid.params[0]
-method = grid.methods[0]
-x = np.random.normal(0, 1, (100,5))
-b = np.ones((5,))
-l = x@b
-y = np.random.binomial(1, 1/(1+np.exp(-l)))
-data = x, y
+xs, xt = np.random.normal(0, 1, (200, 3)), np.random.normal(0, 1, (200, 3))
+b = np.array([1,1,1])
+ps, pt = 1/(1+np.exp(-xs@b)), 1/(1+np.exp(-xt@b))
+ys, yt = np.random.binomial(1, ps), np.random.binomial(1, pt)
+grid.fit(xs, ys, xt, yt)
 
-grid.fit(x,y)
+
+cl = WithLabelOptimalClassifier()
+cl.fit(xs, ys, xt, yt)

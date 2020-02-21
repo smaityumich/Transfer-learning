@@ -94,9 +94,9 @@ class WithLabelOptimalClassifier():
 
     def fit(self, x_source = np.random.random((100,3)), y_source = np.random.binomial(1, 0.5, (100,)), x_target = np.random.random((100,3)), y_target = np.random.binomial(1, 0.5, (100,))):
         bandwidths = np.linspace(0.1, 2, 40)
-        grid = GridSearchCV(WithLabelClassifier(), {'bandwidth': bandwidths}, cv = 5)
+        grid = CVGridSearch(WithLabelClassifier(), {'bandwidth': bandwidths}, cv = 5)
         grid.fit(x_source, y_source, x_target, y_target)
-        self.bandwidth = grid.best_params_['bandwidth']
+        self.bandwidth = grid.best_param_['bandwidth']
         self._classifier = WithLabelClassifier(bandwidth = self.bandwidth)
         self._classifier.source_data(x_source, y_source)
         self._classifier.fit(x_target, y_target)

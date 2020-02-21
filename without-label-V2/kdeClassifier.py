@@ -66,7 +66,7 @@ class KDEClassifierOptimalParameter():
         self.n, self.d = x.shape
         self.x, self.y = x, y
         try: 
-            self.bandwith = float(self.bandwidth)
+            self.bandwidth = float(self.bandwidth)
         except:
             bandwidths =  np.linspace(0.1, 2, 20)
             grid = GridSearchCV(KDEClassifier(), {'bandwidth': bandwidths}, cv = 5)

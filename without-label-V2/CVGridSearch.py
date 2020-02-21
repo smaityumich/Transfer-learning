@@ -37,7 +37,7 @@ class CVGridSearch(BaseEstimator):
             list_errors = pool.map(self.unit_work, zip(self.methods, self.params, datas))
         self.evaluation = list_errors
         error_list = np.array([s['error'] for s in list_errors])
-        self.best_param_ = eval(self.params[np.argmin(error_list)])
+        self.best_param_ = list_errors[np.argmin(error_list)]['args']
 
 
 
