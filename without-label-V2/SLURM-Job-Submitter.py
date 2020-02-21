@@ -15,14 +15,14 @@ log_dir = cwd + '.log'
 mkdir_path(log_dir)
 
 # Experiment 1
-n_sources = [50, 100, 200, 400, 800, 1600, 3200, 6400]
+n_targets = [50, 100, 200, 400, 800, 1600]
 
 
 
 job_file = 'submit.sbat'
 
 
-for n_source in n_sources:
+for n_target in n_targets:
     os.system(f'touch {job_file}')
 
         
@@ -37,7 +37,7 @@ for n_source in n_sources:
         fh.writelines("#SBATCH --mail-type=FAIL\n")
         fh.writelines("#SBATCH --mail-user=smaity@umich.edu\n")
         fh.writelines('#SBATCH --partition=standard\n')
-        fh.writelines(f"python3 unit_experiment.py {n_source} 200 2500 0.5 0.8 0.8 5 100")
+        fh.writelines(f"python3 unit_experiment.py 200 {n_target} 2500 0.5 0.8 0.8 5 100")
 
     os.system("sbatch %s" %job_file)
     os.system(f'rm {job_file}')
