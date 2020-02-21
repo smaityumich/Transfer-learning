@@ -1,9 +1,9 @@
 from kdeClassifier import *
-from withLabelV2 import *
+from withLabelV3 import *
 from withoutLabelV3 import *
 import numpy as np
 from dataGenerator import *
-
+from mixtureClassifier import *
 
 
 class Experiments():
@@ -25,6 +25,9 @@ class Experiments():
         dist: distance of means between class conditional distributions 
         d: int, feature space dimension
         '''
+        self.prop_source = prop_source
+        self.prop_target = prop_target
+
         datageneretor = DataGenerator(d = d)
         self.data = dict()
         self.data['source-data'] = dict()
@@ -63,4 +66,41 @@ class Experiments():
         s = self.output['unlabeled-data']
         s['bandwidth'] = cl.bandwidth
         s['error'] = np.mean((y_predict - self.data['test-data']['y'])**2)
+
+
+
+    def _MixtureClassifier(self):
+        cl = OptimalMixtureClassifier()
+        cl.fit(x_source=self.data['source-data']['x'], y_source=self.data['source-data']['y'], x_target=self.data['target-data']['x'], y_target=self.data['target-data']['y'])
+        y_predict = cl.predict(self.data['test-data']['x'])
+        self.output['mixture-classifier'] = dict()
+        s = self.output['mixture-classifier']
+        s['mixture'] = cl.mixture
+        s['error'] = np.mean((y_predict - self.data['test-data']['y'])**2)
+
+
+    def _ClassicalClassifier(self):
+        cl = KDEClassifierOptimalParameter()
+        cl.fit(x = self.data['target-data']['x'], y = self.data['target-data']['y'])
+        y_predict = cl.predict(self.data['test-data']['x'])
+        self.output['classical-classifier'] = dict()
+        s = self.output['classical-classifier']
+        s['bandwidth'] = cl.bandwidth
+        s['error'] = np.mean((y_predict - self.data['test-data']['y'])**2)
+
+
+    def _OracleClassifierNoTargetLabel(self):
+        cl = KDEClassifierOptimalParameter()
+        cl.fit(x = self.data['source-data']['x'], y = self.data['source-data']['y'])
+        bandwidth = cl.bandwidth
+        cl = KDEClassifier(bandwidth)
+        w = np.array([(1-self.prop_target)/(1-self.prop_source), self.prop_target/self.prop_target])
+        cl.fit(X = self.data['source-data']['x'], y = self.data['source-data']['y'], weights = w)
+        y_predict = cl.predict(self.data['test-data']['x'])
+        self.output['oracle-classifier'] = dict()
+        s = self.output['oracle-classifier']
+        s['bandwidth'] = cl.bandwidth
+        s['error'] = np.mean((y_predict - self.data['test-data']['y'])**2)
+
+       
 

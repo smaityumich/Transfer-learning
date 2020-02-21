@@ -1,8 +1,9 @@
 import numpy as np
 from sklearn import metrics, neighbors
 from sklearn.base import BaseEstimator, ClassifierMixin
-from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import GridSearchCV, ParameterGrid
 from CVGridSearch import *
+import pickle
 
 
 class WithLabelClassifier(BaseEstimator, ClassifierMixin):
@@ -11,7 +12,8 @@ class WithLabelClassifier(BaseEstimator, ClassifierMixin):
     def __init__(self, bandwidth = 1.0, kernel = 'gaussian'):
         self.bandwidth = bandwidth
         self.kernel = kernel
-        x_source, y_source = np.load('x_source.npy'), np.load('y_source.npy')
+        
+    def source_data(self, x_source, y_source):
         x_source = np.array(x_source)
         y_source = np.array(y_source)
 
@@ -94,8 +96,9 @@ class WithLabelOptimalClassifier():
         bandwidths = np.linspace(0.1, 2, 40)
         grid = CVGridSearch(WithLabelClassifier(), {'bandwidth': bandwidths}, cv = 5)
         grid.fit(x_source, y_source, x_target, y_target)
-        self.bandwidth = grid.best_params_['bandwidth']
+        self.bandwidth = grid.best_param_['bandwidth']
         self._classifier = WithLabelClassifier(bandwidth = self.bandwidth)
+        self._classifier.source_data(x_source, y_source)
         self._classifier.fit(x_target, y_target)
 
 

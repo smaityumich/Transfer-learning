@@ -57,7 +57,7 @@ class WithoutLabelClassifier():
         See Lipton et al, Detecting and Correlating label shift with black box predictors
         '''
         if bandwidth == None or classifier == 'None':
-            bandwidths =  np.linspace(0.1, 2, 100)
+            bandwidths =  np.linspace(0.1, 2, 40)
             grid = GridSearchCV(KDEClassifier(), {'bandwidth': bandwidths}, cv = 5)
             grid.fit(self.x_source, self.y_source)
             self.bandwidth = grid.best_params_['bandwidth']
