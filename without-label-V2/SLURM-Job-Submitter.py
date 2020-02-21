@@ -15,7 +15,7 @@ log_dir = cwd + '.log'
 mkdir_path(log_dir)
 
 # Experiment 1
-n_targets = [50, 100, 200, 400, 800, 1600]
+n_targets = [1600, 3200, 6400]
 
 
 
@@ -30,7 +30,7 @@ for n_target in n_targets:
         fh.writelines("#!/bin/bash\n")
         fh.writelines(f"#SBATCH --job-name=n_Q-{n_target}.job\n")
         fh.writelines('#SBATCH --nodes=1\n')
-        fh.writelines('#SBATCH --cpus-per-task=1\n')
+        fh.writelines('#SBATCH --cpus-per-task=10\n')
         fh.writelines('#SBATCH --mem-per-cpu=6gb\n')
         fh.writelines("#SBATCH --time=02:00:00\n")
         fh.writelines("#SBATCH --account=stats_dept1\n")
