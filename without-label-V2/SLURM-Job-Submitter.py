@@ -28,7 +28,7 @@ for n_target in n_targets:
         
     with open(job_file,'w') as fh:
         fh.writelines("#!/bin/bash\n")
-        fh.writelines(f"#SBATCH --job-name=n_source-{n_source}.job\n")
+        fh.writelines(f"#SBATCH --job-name=n_Q-{n_target}.job\n")
         fh.writelines('#SBATCH --nodes=1\n')
         fh.writelines('#SBATCH --cpus-per-task=1\n')
         fh.writelines('#SBATCH --mem-per-cpu=6gb\n')
