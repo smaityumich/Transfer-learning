@@ -22,22 +22,6 @@ dict_temp = dict()
 
 for n_source in n_sources:
     bayes, labeled, unlabeled, mix, classical, oracle = source_(n_source, 200, 0.5, 0.8, 1, 5, 100)
-    dict_temp[str(n_source)] = {'bayes-error': bayes, 'labeled-error': labeled, 'unlabeled-error': unlabeled, 'mix-error': mix, 'classical-error': classical, 'oracle-error': oracle}
-
-with open('source-summary.json','w') as fh:
-    json.dump(dict_temp, fh)
-
-
-
-
-n_targets = np.array(range(1, 33))*50
-dict_temp = dict()
-
-for n_target in n_targets:
-    bayes, labeled, unlabeled, mix, classical, oracle = source_(200, n_target, 0.5, 0.8, 1, 5, 100)
-    dict_temp[str(n_target)] = {'bayes-error': bayes, 'labeled-error': labeled, 'unlabeled-error': unlabeled, 'mix-error': mix, 'classical-error': classical, 'oracle-error': oracle}
-
-with open('target-summary.json','w') as fh:
-    json.dump(dict_temp, fh)
+    dict_temp[n_source] = {'bayes-error': bayes, 'labeled-error': labeled, 'unlabeled-error': unlabeled, 'mix-error': mix, 'classical-error': classical, 'oracle-error': oracle}
 
 
