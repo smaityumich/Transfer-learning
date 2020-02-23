@@ -1,0 +1,995 @@
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_split/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, /home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, /home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/Transfer-learning/without-label-V2/kdeClassifier.py:31: RuntimeWarning: invalid value encountered in log
+  for Xi in training_sets] + np.log(weights)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/./home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, /home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/Transfer-learning/without-label-V2/kdeClassifier.py:31: RuntimeWarning: invalid value encountered in log
+  for Xi in training_sets] + np.log(weights)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/./home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/Transfer-learning/without-label-V2/kdeClassifier.py:31: RuntimeWarning: invalid value encountered in log
+  for Xi in training_sets] + np.log(weights)
+/home/smaity/Transfer-learning/without-label-V2/kdeClassifier.py:31: RuntimeWarning: invalid value encountered in log
+  for Xi in training_sets] + np.log(weights)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/pyth/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning: The least populated class in y has only 4 members, which is less than n_splits=5.
+  % (min_groups, self.n_splits)), UserWarning)
+/home/smaity/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:667: UserWarning:
