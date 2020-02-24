@@ -2,7 +2,7 @@ from kdeClassifier import *
 from withLabelV3 import *
 from withoutLabelV3 import *
 import numpy as np
-from dataGeneratorV2 import *
+from dataGeneratorV3 import *
 from mixtureClassifier import *
 import multiprocessing as mp
 
