@@ -37,7 +37,7 @@ for n_source in n_sources:
         fh.writelines("#SBATCH --mail-type=FAIL\n")
         fh.writelines("#SBATCH --mail-user=smaity@umich.edu\n")
         fh.writelines('#SBATCH --partition=standard\n')
-        fh.writelines(f"python3 unit_experiment.py {n_source} 200 2500 0.5 0.8 1 5 100")
+        fh.writelines(f"python3 unit_experiment.py {n_source} 100 100 0.5 0.8 2 5 100")
 
     os.system("sbatch %s" %job_file)
     os.system(f'rm {job_file}')
@@ -62,7 +62,7 @@ for n_target in n_targets:
         fh.writelines("#SBATCH --mail-type=FAIL\n")
         fh.writelines("#SBATCH --mail-user=smaity@umich.edu\n")
         fh.writelines('#SBATCH --partition=standard\n')
-        fh.writelines(f"python3 unit_experiment.py 200 {n_target} 2500 0.5 0.8 1 5 100")
+        fh.writelines(f"python3 unit_experiment.py 2000 {n_target} 100 0.5 0.8 2 5 100")
 
     os.system("sbatch %s" %job_file)
     os.system(f'rm {job_file}')

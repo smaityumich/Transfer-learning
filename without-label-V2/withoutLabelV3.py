@@ -58,7 +58,7 @@ class WithoutLabelClassifier():
         '''
         if bandwidth == None or classifier == 'None':
             bandwidths =  np.linspace(0.1, 2, 40)
-            grid = GridSearchCV(KDEClassifier(), {'bandwidth': bandwidths}, cv = 5)
+            grid = GridSearchCV(KDEClassifier(), {'bandwidth': bandwidths}, cv = 5, n_jobs = -1)
             grid.fit(self.x_source, self.y_source)
             self.bandwidth = grid.best_params_['bandwidth']
         if bandwidth != None:

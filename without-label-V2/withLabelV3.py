@@ -88,13 +88,14 @@ class WithLabelClassifier(BaseEstimator, ClassifierMixin):
 
 class WithLabelOptimalClassifier():
 
-    def __init__(self, kernel = 'gaussian'):
+    def __init__(self, kernel = 'gaussian', nodes = 1):
         self.kernel = kernel
+        self.nodes = nodes
 
 
     def fit(self, x_source = np.random.random((100,3)), y_source = np.random.binomial(1, 0.5, (100,)), x_target = np.random.random((100,3)), y_target = np.random.binomial(1, 0.5, (100,))):
-        bandwidths = np.linspace(0.1, 2, 40)
-        grid = CVGridSearch(WithLabelClassifier(), {'bandwidth': bandwidths}, cv = 5)
+        bandwidths = np.linspace(0.1, 2, 20)
+        grid = CVGridSearch(WithLabelClassifier(), {'bandwidth': bandwidths}, cv = 5, nodes = self.nodes)
         grid.fit(x_source, y_source, x_target, y_target)
         self.bandwidth = grid.best_param_['bandwidth']
         self._classifier = WithLabelClassifier(bandwidth = self.bandwidth)

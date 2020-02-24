@@ -50,7 +50,7 @@ class Experiments():
 
     def _QLabledClassifier(self):
 
-        cl = WithLabelOptimalClassifier()
+        cl = WithLabelOptimalClassifier(nodes = mp.cpu_count())
         cl.fit(x_source=self.data['source-data']['x'], y_source=self.data['source-data']['y'], x_target=self.data['target-data']['x'], y_target=self.data['target-data']['y'])
         self.output['labeled-data'] = dict()
         s = self.output['labeled-data']
@@ -96,7 +96,7 @@ class Experiments():
         cl.fit(x = self.data['source-data']['x'], y = self.data['source-data']['y'])
         bandwidth = cl.bandwidth
         cl = KDEClassifier(bandwidth)
-        w = np.array([(1-self.prop_target)/(1-self.prop_source), self.prop_target/self.prop_target])
+        w = np.array([(1-self.prop_target)/(1-self.prop_source), self.prop_target/self.prop_source])
         cl.fit(X = self.data['source-data']['x'], y = self.data['source-data']['y'], weights = w)
         y_predict = cl.predict(self.data['test-data']['x'])
         self.output['oracle-classifier'] = dict()

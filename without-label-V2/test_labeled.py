@@ -17,24 +17,23 @@ def unit_iter_labeled(par = (500, 200, 200, 0.5, 0.8, 1, 4)):
     x_test, y_test, bayes_test = data._getData(n_test, prop_target, dist)
 
     # Classifier 
-    cl = WithLabelOptimalClassifier()
+    cl = WithLabelOptimalClassifier(nodes = mp.cpu_count())
     cl.fit(x_source, y_source, x_target, y_target)
     y_predict = cl.predict(x_test)
 
-    return np.mean((y_predict - y_test)**2), np.mean((bayes_test-y_test)**2)
+    return np.mean((y_predict - y_test)**2) - np.mean((bayes_test-y_test)**2)
 
 
 
-def unit_expt_labeled(n_source = 500, n_target = 200, n_test = 200, prop_source = 0.5, prop_target = 0.8, dist = 1, d = 4, workers = 1, iteration = 100):
+def unit_expt_labeled(n_source = 500, n_target = 50, n_test = 100, prop_source = 0.5, prop_target = 0.8, dist = 1, d = 4, iteration = 10):
     
     par = n_source, n_target, n_test,  prop_source, prop_target, dist, d
     pars = [par for _ in range(iteration)]
 
-    p = mp.Pool(workers)
-    out = p.map(unit_iter_labeled, pars)
-    p.close()
-    p.join()
 
+    out = map(unit_iter_labeled, pars)
+
+    out = list(out)
     out = np.array(out)
     return np.mean(out, axis = 0)
 
@@ -47,7 +46,7 @@ print('\n\n\n')
 
 for n_source in n_sources:
 
-    out = unit_expt_labeled(n_source = n_source, workers = mp.cpu_count())
+    out = unit_expt_labeled(n_source = n_source)
     print(f'n_source: {n_source}\n')
     print(out)
     print('\n\n')
