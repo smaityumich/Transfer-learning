@@ -12,7 +12,8 @@ class DataGenerator():
         self.y = np.random.binomial(1, self.prop, (self.n,))
 
     def _generate_unitX(self, y):
-        return np.random.triangular(0, 0.5, 1, (self.d,)) if y else np.random.random((self.d,)) 
+        u = np.random.random((self.d,))
+        return np.sqrt(u) if y else u
 
         
     def _generateX(self, distance = 0):
@@ -20,8 +21,7 @@ class DataGenerator():
         self.x = [self._generate_unitX(y) for y in self.y]
 
     def _density1(self, x):
-        f = lambda u: 4*u if u < 0.5 else 4*(1-u)
-        density = map(f, x)
+        density = np.array(x)*2
         return functools.reduce(lambda u, v : u*v, density, 1)
         
     def _bayesDecision(self, x):
