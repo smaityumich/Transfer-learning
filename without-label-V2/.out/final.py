@@ -3,7 +3,7 @@ import numpy as np
 
 def source_(n_source, n_target, prop_source, prop_target, dist, d, iteration):
     
-    filename = f'n_source-{n_source}-n_target-{n_target}-prop_source-{prop_source}-prop_target-{prop_target}-dist-{float(dist)}-d-{d}-iter-{iteration}.json'
+    filename = f'n_source-{n_source}-n_target-{n_target}-prop_source-{prop_source}-prop_target-{prop_target}-dist-{float(dist)}-d-{d}-iter-{iteration}-sqrt.json'
     bayes_error, labeled_data, unlabeled_data, mix_classifier, classical_classifier, oracle_unlabeled = np.zeros((iteration,)), np.zeros((iteration,)), np.zeros((iteration,)), np.zeros((iteration,)), np.zeros((iteration,)), np.zeros((iteration,)) 
 
     with open(filename, 'r') as fp:
@@ -17,7 +17,7 @@ def source_(n_source, n_target, prop_source, prop_target, dist, d, iteration):
     return np.mean([bayes_error, labeled_data, unlabeled_data, mix_classifier, classical_classifier, oracle_unlabeled], axis  = 1)
 
 
-n_sources = [50, 100, 200, 400, 800, 1600] 
+n_sources = [100, 200, 400, 800, 1600, 3200, 6400] 
 dict_temp = dict()
 
 for n_source in n_sources:
@@ -30,7 +30,7 @@ with open('source-summary.json','w') as fh:
 
 
 
-n_targets =  [50, 100, 200, 400, 800, 1600]
+n_targets =  [25, 50, 100, 200, 400, 800, 1600]
 dict_temp = dict()
 
 for n_target in n_targets:
