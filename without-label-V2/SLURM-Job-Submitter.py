@@ -19,7 +19,11 @@ mkdir_path(log_dir)
 job_file = 'submit.sbat'
 
 # Experiment 1
+<<<<<<< HEAD
 n_sources = [3200, 6400, 12800, 25600]
+=======
+n_sources = [25, 50, 100, 200, 400, 800, 1600, 3200]
+>>>>>>> smaity_side
 
 
 for n_source in n_sources:
@@ -44,7 +48,11 @@ for n_source in n_sources:
 
 
 # Experiment 2
+<<<<<<< HEAD
 n_targets = [3200, 6400]
+=======
+n_targets = [25, 50, 100, 200, 400, 800, 1600]
+>>>>>>> smaity_side
 
 
 for n_target in n_targets:
