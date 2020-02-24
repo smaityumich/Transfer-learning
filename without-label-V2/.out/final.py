@@ -17,7 +17,7 @@ def source_(n_source, n_target, prop_source, prop_target, dist, d, iteration):
     return np.mean([bayes_error, labeled_data, unlabeled_data, mix_classifier, classical_classifier, oracle_unlabeled], axis  = 1)
 
 
-n_sources = np.array(range(1,33))*50
+n_sources = [50, 100, 200, 400, 800, 1600] 
 dict_temp = dict()
 
 for n_source in n_sources:
@@ -30,7 +30,7 @@ with open('source-summary.json','w') as fh:
 
 
 
-n_targets = np.array(range(1, 33))*50
+n_targets =  [50, 100, 200, 400, 800, 1600]
 dict_temp = dict()
 
 for n_target in n_targets:
