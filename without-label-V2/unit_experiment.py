@@ -16,7 +16,7 @@ for i in range(iteration):
     e._OracleClassifierNoTargetLabel()
     outputs[i] = e.output
 
-filename = f'.out/n_source-{n_source}-n_target-{n_target}-prop_source-{prop_source}-prop_target-{prop_target}-dist-{dist}-d-{d}-iter-{iteration}.json'
+filename = f'.out/n_source-{n_source}-n_target-{n_target}-prop_source-{prop_source}-prop_target-{prop_target}-dist-{dist}-d-{d}-iter-{iteration}-triangular.json'
 
 with open(filename, 'w') as fp:
     json.dump(outputs, fp)

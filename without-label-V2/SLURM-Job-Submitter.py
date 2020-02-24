@@ -19,7 +19,7 @@ mkdir_path(log_dir)
 job_file = 'submit.sbat'
 
 # Experiment 1
-n_sources = np.array(range(1, 33))*50
+n_sources = [25, 50, 100, 200, 400, 800, 1600, 3200]
 
 
 for n_source in n_sources:
@@ -44,7 +44,7 @@ for n_source in n_sources:
 
 
 # Experiment 2
-n_targets = np.array(range(1, 33))*50
+n_targets = [25, 50, 100, 200, 400, 800, 1600]
 
 
 for n_target in n_targets:
