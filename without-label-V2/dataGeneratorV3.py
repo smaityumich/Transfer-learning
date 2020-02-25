@@ -13,7 +13,7 @@ class DataGenerator():
 
     def _generate_unitX(self, y):
         u = self._gen_s()
-        v = beta.rvs(5, 5) if y else beta.rvs(0.5, 0.5)
+        v = beta.rvs(5, 5) if y else beta.rvs(1, 1)
         return u*v
 
 
@@ -28,7 +28,7 @@ class DataGenerator():
     
     def _density1(self, x):
         r = np.linalg.norm(x, 2)
-        return beta.pdf(r, 5,5)/beta.pdf(r, 0.5, 0.5)
+        return beta.pdf(r, 5,5)/beta.pdf(r, 1, 1)
         
     
     def _bayesDecision(self, x):

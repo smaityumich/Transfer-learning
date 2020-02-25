@@ -1,0 +1,14 @@
+             JOBID PARTITION     NAME     USER  ACCOUNT ST       TIME  NODES NODELIST(REASON)
+           4138589  standard n_P-400.   smaity stats_de  R       2:32      1 gl3104
+           4138590  standard n_P-800.   smaity stats_de  R       2:32      1 gl3107
+           4138591  standard n_P-1600   smaity stats_de  R       2:32      1 gl3108
+           4138592  standard n_P-3200   smaity stats_de  R       2:32      1 gl3105
+           4138593  standard n_P-6400   smaity stats_de  R       2:32      1 gl3105
+           4138594  standard n_Q-25.j   smaity stats_de  R       2:32      1 gl3322
+           4138596  standard n_Q-50.j   smaity stats_de  R       2:32      1 gl3323
+           4138597  standard n_Q-100.   smaity stats_de  R       2:32      1 gl3336
+           4138598  standard n_Q-200.   smaity stats_de  R       2:32      1 gl3337
+           4138599  standard n_Q-400.   smaity stats_de  R       2:32      1 gl3338
+           4138600  standard n_Q-800.   smaity stats_de  R       2:32      1 gl3339
+           4138601  standard n_Q-1600   smaity stats_de  R       2:32      1 gl3340
+           4138602  standard n_Q-3200   smaity stats_de  R       2:32      1 gl3341
