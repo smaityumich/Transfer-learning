@@ -1,0 +1,52 @@
+import numpy as np
+
+class DataGenerator():
+    
+    def __init__(self, d = 4):
+        self.d = d
+        
+    def _generateY(self, n = 100, prop = 0.5):
+        self.prop = prop
+        self.n = n
+        self.y = np.random.binomial(1, self.prop, (self.n,))
+
+    def _generate_unitX(self, y):
+        u = self._gen_s()
+        v = np.random.triangular(0, 0.5, 1) if y else np.random.random()
+        return u*v
+
+
+    def _gen_s(self): ## Generates data from spherical distribution S(d-1)
+        u = np.random.normal(0, 1, (self.d, ))
+        return u/np.linalg.norm(u, 2)
+        
+    
+    def _generateX(self, distance = 0):
+        self.x = [self._generate_unitX(y) for y in self.y]
+
+    
+    def _density1(self, x):
+        r = np.linalg.norm(x, 2)
+        return 4*r if r<0.5 else 4*(1-r)
+        
+    
+    def _bayesDecision(self, x):
+        x = np.array(x)
+        prior = np.log(self.prop/(1-self.prop))
+        log_lik_ratio = np.log(self._density1(x)) ## Calculates log-likelihood ratio for triangular vs uniform in [0,1]^d
+        posterior = prior + log_lik_ratio
+        return 0 if posterior<0 else 1
+        
+    def _bayesY(self):
+        self.bayesLabel = [self._bayesDecision(x) for x in self.x]
+        
+    def _getData(self, n = 100, prop = 0.5, distance = 0.4):
+        self._generateY(n, prop)
+        self._generateX(distance)
+        self._bayesY()
+        return np.array(self.x), np.array(self.y), np.array(self.bayesLabel)
+
+
+        
+        
+ 
