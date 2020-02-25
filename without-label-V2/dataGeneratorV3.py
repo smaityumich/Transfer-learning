@@ -1,4 +1,5 @@
 import numpy as np
+from scipy.stats import beta
 
 class DataGenerator():
     
@@ -12,7 +13,7 @@ class DataGenerator():
 
     def _generate_unitX(self, y):
         u = self._gen_s()
-        v = np.random.triangular(0, 0.5, 1) if y else np.random.random()
+        v = beta.rvs(5, 5) if y else beta.rvs(0.5, 0.5)
         return u*v
 
 
@@ -27,7 +28,7 @@ class DataGenerator():
     
     def _density1(self, x):
         r = np.linalg.norm(x, 2)
-        return 4*r if r<0.5 else 4*(1-r)
+        return beta.pdf(r, 5,5)/beta.pdf(r, 0.5, 0.5)
         
     
     def _bayesDecision(self, x):
