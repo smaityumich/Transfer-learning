@@ -1,7 +1,8 @@
 import numpy as np
-from sklearn import metrics, neighbors
+from sklearn import metrics, neighbors, base
 from sklearn.base import BaseEstimator, ClassifierMixin
-from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import GridSearchCV, ParameterGrid, KFold
+from multiprocessing import Pool
 
 
 class KDEClassifier(BaseEstimator, ClassifierMixin):
@@ -49,8 +50,10 @@ class KDEClassifierOptimalParameter():
     Finds the smoothness parameter optimally using cross-vaidation
     '''
 
-    def __init__(self, bandwidth = None):
+    def __init__(self, bandwidth = None, cv = 5, workers = 1):
         self.bandwidth  = bandwidth
+        self.cv = cv
+        self.workers = workers
 
 
 
@@ -60,7 +63,7 @@ class KDEClassifierOptimalParameter():
         kf = KFold(n_splits = self.cv)
         errors = np.zeros((self.cv, ))
 
-        for index, (train_index, test_index) in enumerate(kf.split(x_source)):
+        for index, (train_index, test_index) in enumerate(kf.split(x)):
             x_train, x_test, y_train, y_test = x[train_index], x[test_index], y[train_index], y[test_index]
             method.fit(x_train, y_train)
             y_pred = method.predict(x_test)
@@ -94,7 +97,7 @@ class KDEClassifierOptimalParameter():
             params = {'bandwidth': bandwidths}
             par_list = list(ParameterGrid(params))
             models = [base.clone(cl).set_params(**arg) for arg in par_list]
-            data = x_source, y_source
+            data = x, y
             datas = [data for _ in range(len(par_list))]
             
             with Pool(self.workers) as pool:

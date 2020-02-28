@@ -4,6 +4,7 @@ from sklearn.base import BaseEstimator
 from sklearn import base
 from sklearn.model_selection import KFold, ParameterGrid
 from multiprocessing import Pool
+import multiprocessing as mp
 
 
 class MixtureClassifier(BaseEstimator):
@@ -12,14 +13,15 @@ class MixtureClassifier(BaseEstimator):
 
     The individual success probabilities are estimated using kernel density, where the smoothing parameter is chosen according to cross validation
     '''
-    def __init__(self, mixture = 0.5, kernel = 'gaussian'):
+    def __init__(self, mixture = 0.5, kernel = 'gaussian', workers = 1):
         self.kernel = kernel
         self.mixture = mixture
+        self.workers = workers
 
     def fit(self, source_classifier,  x_target, y_target):
         self.source_classifier = source_classifier
         
-        cl = KDEClassifierOptimalParameter()
+        cl = KDEClassifierOptimalParameter(workers = self.workers)
         cl.fit(x_target, y_target)
         self.target_classifier = cl._classifier
  
@@ -61,22 +63,21 @@ class OptimalMixtureClassifier():
 
 
 
-    def fit(self, x_source, y_source, x_target, y_target, cv = 5, nodes = 1):
+    def fit(self, x_source, y_source, x_target, y_target, cv = 5):
 
-        cl = KDEClassifierOptimalParameter()
-        cl.fit(x_source, y_source)
+        cl = KDEClassifierOptimalParameter(workers = self.workers)
+        cl.fit(x = x_source, y = y_source)
         source_classifier = cl._classifier
 
 
-        cl = MixtureClassifier()
+        cl = MixtureClassifier(workers = self.workers)
         params = {'mixture': np.linspace(0, 1, 20)}
         par_list = list(ParameterGrid(params))
         models = [base.clone(cl).set_params(**arg) for arg in par_list]
         data = source_classifier, x_target, y_target
         datas = [data for _ in range(len(par_list))]
         
-        with Pool(self.workers) as pool:
-            list_errors = pool.map(self.unit_work, zip(models, par_list, datas))
+        list_errors = list(map(self.unit_work, zip(models, par_list, datas)))
         error_list = np.array([s['error'] for s in list_errors])
         self.mixture = list_errors[np.argmin(error_list)]['arg']['mixture']
         self.classifier = MixtureClassifier(mixture = self.mixture)
