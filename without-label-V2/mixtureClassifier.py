@@ -69,7 +69,7 @@ class OptimalMixtureClassifier():
 
 
         cl = MixtureClassifier()
-        params = {'mixture': np.linspace(0, 1, 11)}
+        params = {'mixture': np.linspace(0, 1, 20)}
         par_list = list(ParameterGrid(params))
         models = [base.clone(cl).set_params(**arg) for arg in par_list]
         data = source_classifier, x_target, y_target

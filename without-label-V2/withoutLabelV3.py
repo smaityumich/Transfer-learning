@@ -1,11 +1,32 @@
 import numpy as np
 from kdeClassifier import *
+from sklearn.model_selection import KFold, ParameterGrid
+from sklearn import base
+from multiprocessing import Pool
+
 
 
 class WithoutLabelClassifier():
 
-    def __init__(self, kernel = 'gaussian'):
+    def __init__(self, kernel = 'gaussian', workers = 1, cv = 5):
         self.kernel = kernel
+        self.workers = workers
+        self.cv = cv
+
+
+    def unit_work(self, args):
+        method, arg , data = args
+        x_source, y_source = data
+        kf = KFold(n_splits = self.cv)
+        errors = np.zeros((self.cv, ))
+
+        for index, (train_index, test_index) in enumerate(kf.split(x_source)):
+            x_train, x_test, y_train, y_test = x_source[train_index], x_source[test_index], y_source[train_index], y_source[test_index]
+            method.fit(x_train, y_train)
+            y_pred = method.predict(x_test)
+            errors[index] = np.mean((y_pred-y_test)**2)
+
+        return {'arg': arg, 'error': np.mean(errors), 'errors': errors}
 
     
     def fit(self, x_source = np.random.random((100,3)), y_source = np.random.binomial(1, 0.5, (100,)), x_target = np.random.random((100,3)), classifier = 'None', bandwidth = None):
@@ -57,10 +78,20 @@ class WithoutLabelClassifier():
         See Lipton et al, Detecting and Correlating label shift with black box predictors
         '''
         if bandwidth == None or classifier == 'None':
-            bandwidths =  np.linspace(0.1, 2, 40)
-            grid = GridSearchCV(KDEClassifier(), {'bandwidth': bandwidths}, cv = 5, n_jobs = -1)
-            grid.fit(self.x_source, self.y_source)
-            self.bandwidth = grid.best_params_['bandwidth']
+            bandwidths =  np.linspace(0.1, 2, 20)
+            cl = KDEClassifier()
+            params = {'bandwidth': bandwidths}
+            par_list = list(ParameterGrid(params))
+            models = [base.clone(cl).set_params(**arg) for arg in par_list]
+            data = x_source, y_source
+            datas = [data for _ in range(len(par_list))]
+            
+            with Pool(self.workers) as pool:
+                 self.list_errors = pool.map(self.unit_work, zip(models, par_list, datas))
+
+            error_list = np.array([s['error'] for s in self.list_errors])
+            
+            self.bandwidth = self.list_errors[np.argmin(error_list)]['arg']['bandwidth']
         if bandwidth != None:
             self.bandwidth = bandwidth
 
@@ -70,9 +101,7 @@ class WithoutLabelClassifier():
             
         
         confusionMatrix = metrics.confusion_matrix(self._sourceClassifier.predict(self.x_source),self.y_source)/self.m
-        #print(f'Confusion matrix: {str(confusionMatrix)}\n')
         propTarget = np.mean(self._sourceClassifier.predict(self.x_target))
-        #print(f'Target proportion of class 1 with classifier for source: {propTarget}')
         xi = np.array([1-propTarget,propTarget])
         self.w = np.matmul(np.linalg.inv(confusionMatrix),xi)
         self.prop_target = self.w[1]*self.prop_source

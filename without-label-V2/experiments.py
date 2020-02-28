@@ -45,7 +45,8 @@ class Experiments():
         self.output = dict()
         self.workers = mp.cpu_count()
         self.output['test-data'] = dict()
-        self.output['test-data']['bayes-error'] = np.mean((s['y']-s['bayes'])**2)
+        _, y, bayes = datageneretor._getData(10000, prop_target, dist)
+        self.output['test-data']['bayes-error'] = np.mean((y-bayes)**2)
 
 
     def _QLabledClassifier(self):

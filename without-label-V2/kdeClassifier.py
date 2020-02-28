@@ -52,6 +52,27 @@ class KDEClassifierOptimalParameter():
     def __init__(self, bandwidth = None):
         self.bandwidth  = bandwidth
 
+
+
+    def unit_work(self, args):
+        method, arg , data = args
+        x, y = data
+        kf = KFold(n_splits = self.cv)
+        errors = np.zeros((self.cv, ))
+
+        for index, (train_index, test_index) in enumerate(kf.split(x_source)):
+            x_train, x_test, y_train, y_test = x[train_index], x[test_index], y[train_index], y[test_index]
+            method.fit(x_train, y_train)
+            y_pred = method.predict(x_test)
+            errors[index] = np.mean((y_pred-y_test)**2)
+
+        return {'arg': arg, 'error': np.mean(errors), 'errors': errors}
+
+
+
+
+
+
     def fit(self, x = np.random.random((100,3)), y = np.random.binomial(1, 0.5, (100,))):
         x = np.array(x)
         y = np.array(y)
@@ -69,9 +90,19 @@ class KDEClassifierOptimalParameter():
             self.bandwidth = float(self.bandwidth)
         except:
             bandwidths =  np.linspace(0.1, 2, 20)
-            grid = GridSearchCV(KDEClassifier(), {'bandwidth': bandwidths}, cv = 5, n_jobs = -1)
-            grid.fit(self.x, self.y)
-            self.bandwidth = grid.best_params_['bandwidth']
+            cl = KDEClassifier()
+            params = {'bandwidth': bandwidths}
+            par_list = list(ParameterGrid(params))
+            models = [base.clone(cl).set_params(**arg) for arg in par_list]
+            data = x_source, y_source
+            datas = [data for _ in range(len(par_list))]
+            
+            with Pool(self.workers) as pool:
+                 self.list_errors = pool.map(self.unit_work, zip(models, par_list, datas))
+
+            error_list = np.array([s['error'] for s in self.list_errors])
+            self.bandwidth = self.list_errors[np.argmin(error_list)]['arg']['bandwidth']
+ 
         self._classifier = KDEClassifier(bandwidth = self.bandwidth)
         self._classifier.fit(self.x, self.y)
 
