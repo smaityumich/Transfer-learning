@@ -30,7 +30,7 @@ for n_source in n_sources:
         fh.writelines("#!/bin/bash\n")
         fh.writelines(f"#SBATCH --job-name=n_P-{n_source}.job\n")
         fh.writelines('#SBATCH --nodes=1\n')
-        fh.writelines('#SBATCH --cpus-per-task=10\n')
+        fh.writelines('#SBATCH --cpus-per-task=30\n')
         fh.writelines('#SBATCH --mem-per-cpu=6gb\n')
         fh.writelines("#SBATCH --time=02:00:00\n")
         fh.writelines("#SBATCH --account=stats_dept1\n")
