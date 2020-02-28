@@ -21,7 +21,7 @@ n_sources = [25, 50, 100, 200, 400, 800, 1600, 3200, 6400]
 dict_temp = dict()
 
 for n_source in n_sources:
-    bayes, labeled, unlabeled, mix, classical, oracle = source_(n_source, 200, 0.5, 0.8, 2, 5, 100)
+    bayes, labeled, unlabeled, mix, classical, oracle = source_(n_source, 100, 0.5, 0.8, 2, 5, 100)
     dict_temp[str(n_source)] = {'bayes-error': bayes, 'labeled-error': labeled, 'unlabeled-error': unlabeled, 'mix-error': mix, 'classical-error': classical, 'oracle-error': oracle}
 
 with open('source-summary.json','w') as fh:
