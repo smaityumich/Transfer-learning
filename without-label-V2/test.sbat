@@ -8,4 +8,4 @@
 #SBATCH --mail-type=NONE
 #SBATCH --mail-user=smaity@umich.edu
 #SBATCH --partition=standard
-python3 unit_exptV2.py 12800 100 200 0.5 0.8 2 5 0 
+python3 unit_exptV2.py 25 100 200 0.5 0.8 2 5 0 
