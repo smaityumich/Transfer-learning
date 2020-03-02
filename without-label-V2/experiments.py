@@ -9,16 +9,18 @@ import multiprocessing as mp
 
 class Experiments():
 
-    def __init__(self, kernel = 'gaussian', workers = -1):
+    def __init__(self, kernel = 'gaussian', workers = 1):
         self.kernel = kernel
         try: 
             w = int(workers)
+            flag = False
         except:
             flag = True
 
         if w < 1:
-            flag = True
-        self.workers = mp.cpu_count() if flag else w
+            flag = False
+            w = 1
+        self.workers = w
 
 
     def _getData(self, n_source = 500, n_target = 200, n_test = 200, prop_source = 0.5, prop_target = 0.8, dist = 0.8, d = 4):

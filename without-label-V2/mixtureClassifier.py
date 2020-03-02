@@ -76,7 +76,6 @@ class OptimalMixtureClassifier():
         models = [base.clone(cl).set_params(**arg) for arg in par_list]
         data = source_classifier, x_target, y_target
         datas = [data for _ in range(len(par_list))]
-        
         list_errors = list(map(self.unit_work, zip(models, par_list, datas)))
         error_list = np.array([s['error'] for s in list_errors])
         self.mixture = list_errors[np.argmin(error_list)]['arg']['mixture']

@@ -85,9 +85,14 @@ class WithoutLabelClassifier():
             models = [base.clone(cl).set_params(**arg) for arg in par_list]
             data = x_source, y_source
             datas = [data for _ in range(len(par_list))]
-            
-            with Pool(self.workers) as pool:
-                 self.list_errors = pool.map(self.unit_work, zip(models, par_list, datas))
+            args_list = zip(models, par_list, datas)
+
+            if self.workers == 1:
+                self.list_errors = list(map(self.unit_work, args_list))
+
+            else: 
+                with Pool(self.workers) as pool:
+                    self.list_errors = pool.map(self.unit_work, zip(models, par_list, datas))
 
             error_list = np.array([s['error'] for s in self.list_errors])
             

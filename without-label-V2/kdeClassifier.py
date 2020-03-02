@@ -99,9 +99,14 @@ class KDEClassifierOptimalParameter():
             models = [base.clone(cl).set_params(**arg) for arg in par_list]
             data = x, y
             datas = [data for _ in range(len(par_list))]
+            args = zip(models, par_list, datas)
             
-            with Pool(self.workers) as pool:
-                 self.list_errors = pool.map(self.unit_work, zip(models, par_list, datas))
+            if self.workers == 1:
+                self.list_errors = list(map(self.unit_work, args))
+
+            else:
+                with Pool(self.workers) as pool:
+                    self.list_errors = pool.map(self.unit_work, zip(models, par_list, datas))
 
             error_list = np.array([s['error'] for s in self.list_errors])
             self.bandwidth = self.list_errors[np.argmin(error_list)]['arg']['bandwidth']
