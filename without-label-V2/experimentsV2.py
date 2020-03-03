@@ -51,7 +51,7 @@ elif experiment == 'QUnlabeled':
 elif experiment == 'Mixture':
     cl = OptimalMixtureClassifier(nodes = 1)
     cl.fit(x_source = xs, y_source = ys, x_target = xt, y_target = yt)
-    result['mixture'] = cl.mixture
+    result['bandwidth'] = cl.mixture
     y_pred = cl.predict(xtest)
     result['error'] = np.mean((y_pred - ytest)**2)
 
@@ -77,7 +77,7 @@ else:
     raise TypeError('Wrong experiment')
 
 
-result['par'] = {'n-source': n_source, 'n-target': n_target, 'n-test': n_test, 'prop-source': prop_source, 'prop-target': prop_target, 'dist': dist, 'd': d, 'iter': iteration, 'expt': experiment}
+result['n-source'], result['n-target'], result['n-test'], result['prop-source'], result['prop-target'], result['dist'], result['d'], result['iter'], result['expt'] =  n_source, n_target, n_test, prop_source, prop_target, dist, d, iteration, experiment
  
 
 
