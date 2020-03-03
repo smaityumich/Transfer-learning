@@ -81,11 +81,9 @@ result['par'] = {'n-source': n_source, 'n-target': n_target, 'n-test': n_test, '
  
 
 
-filename = f'.result/result.txt'
+filename = f'.data/n_source-{n_source}-n_target-{n_target}-n_test-{n_test}-prop_source-{prop_source}-prop_target-{prop_target}-dist-{dist}-d-{d}-iter-{iteration}-expt-{experiment}-normal-data.json'
 
-with open(filename, 'a') as fp:
-    fp.writelines(str(result))
-    fp.write('\n\n\n')
-
+with open(filename, 'w') as fp:
+    json.dump(result, fp)
   
 
