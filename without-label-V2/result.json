@@ -1,5 +1,0 @@
-{"bandwidth": 0.6, "error": 0.13, "par": {"n-source": 25, "n-target": 100, "n-test": 100, "prop-source": 0.5, "prop-target": 0.8, "dist": 2.0, "d": 5, "iter": 0, "expt": "QLabeled"}}
-{"bandwidth": 0.6, "error": 0.2, "par": {"n-source": 25, "n-target": 100, "n-test": 100, "prop-source": 0.5, "prop-target": 0.8, "dist": 2.0, "d": 5, "iter": 0, "expt": "Oracle"}}
-{"bandwidth": 0.6, "error": 0.22, "par": {"n-source": 25, "n-target": 100, "n-test": 100, "prop-source": 0.5, "prop-target": 0.8, "dist": 2.0, "d": 5, "iter": 0, "expt": "QUnlabeled"}}
-{"bandwidth": 0.6, "error": 0.27, "par": {"n-source": 25, "n-target": 100, "n-test": 100, "prop-source": 0.5, "prop-target": 0.8, "dist": 2.0, "d": 5, "iter": 0, "expt": "Classical"}}
-{"mixture": 0.5789473684210527, "error": 0.18, "par": {"n-source": 25, "n-target": 100, "n-test": 100, "prop-source": 0.5, "prop-target": 0.8, "dist": 2.0, "d": 5, "iter": 0, "expt": "Mixture"}}
