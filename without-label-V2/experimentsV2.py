@@ -76,13 +76,16 @@ elif experiment == 'Oracle':
 else:
     raise TypeError('Wrong experiment')
 
+
+result['par'] = {'n-source': n_source, 'n-target': n_target, 'n-test': n_test, 'prop-source': prop_source, 'prop-target': prop_target, 'dist': dist, 'd': d, 'iter': iteration, 'expt': experiment}
  
 
 
-filename = f'.result/n_source-{n_source}-n_target-{n_target}-n_test-{n_test}-prop_source-{prop_source}-prop_target-{prop_target}-dist-{dist}-d-{d}-iter-{iteration}-experiment-{experiment}-normal-result.json'
+filename = f'.result/result.txt'
 
-with open(filename, 'w') as fp:
-    json.dump(result, fp)
+with open(filename, 'a') as fp:
+    fp.writelines(str(result))
+    fp.write('\n\n\n')
 
   
 
