@@ -58,7 +58,7 @@ elif experiment == 'Mixture':
 
 elif experiment == 'Classical':
     cl = KDEClassifierOptimalParameter(workers = 1)
-    cl.fit(x = xs, y = ys)
+    cl.fit(x = xt, y = yt)
     result['bandwidth'] = cl.bandwidth
     y_pred = cl.predict(xtest)
     result['error'] = np.mean((y_pred - ytest)**2)
