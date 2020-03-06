@@ -18,7 +18,7 @@ def expt(ns, nt, ntest, ps, pt, dist, d):
             fh.writelines('#SBATCH --cpus-per-task=1\n')
             fh.writelines('#SBATCH --mem-per-cpu=1gb\n')
             fh.writelines("#SBATCH --time=00:20:00\n")
-            fh.writelines("#SBATCH --account=stats_dept1\n")
+            fh.writelines("#SBATCH --account=yuekai1\n")
             fh.writelines("#SBATCH --mail-type=NONE\n")
             fh.writelines("#SBATCH --mail-user=smaity@umich.edu\n")
             fh.writelines('#SBATCH --partition=standard\n')
