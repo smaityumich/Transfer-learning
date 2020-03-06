@@ -79,7 +79,7 @@ class WithLabelClassifier(BaseEstimator, ClassifierMixin):
         self.logprobs = np.array([model.score_samples(x) 
                              for model in self.models_]).T
         result = np.exp(self.logprobs +  self.logpriors_)
-        posterior = result / result.sum(1, keepdims = True)
+        posterior = result / np.sum(result, axis = 1, keepdims = True)
         return self.classes[np.argmax(posterior, 1)]
         
 
