@@ -22,7 +22,7 @@ def expt(ns, nt, ntest, ps, pt, dist, d):
             fh.writelines("#SBATCH --mail-type=NONE\n")
             fh.writelines("#SBATCH --mail-user=smaity@umich.edu\n")
             fh.writelines('#SBATCH --partition=standard\n')
-            fh.writelines(f"python3 unit_exptV2.py {ns} {nt} {ntest} {ps} {pt} {dist} {d} {i}")
+            fh.writelines(f"python3 unit_exptV3.py {ns} {nt} {ntest} {ps} {pt} {dist} {d} {i}")
 
         os.system("sbatch %s" %job_file)
         os.system(f'rm {job_file}')
@@ -37,6 +37,6 @@ def expt(ns, nt, ntest, ps, pt, dist, d):
 
 
 for ns in [25, 50, 100, 200, 400, 800, 1600, 3200]:
-    expt(ns, 400, 100, 0.5, 0.8, 0.8, 5)
+    expt(ns, 50, 100, 0.5, 0.8, 0.8, 5)
 
 #expt(2000, 6400, 100, 0.5, 0.8, 2, 5)
