@@ -13,7 +13,7 @@ ns, nt, ntest, ps, pt, dist, d, it = int(float(sys.argv[1])), int(float(sys.argv
 
 os.system(f'python3 DataCreator.py {ns} {nt} {ntest} {ps} {pt} {dist} {d} {it}')
 
-experiments = ['QLabeled']
+experiments = ['QLabeled', 'Classical', 'Mixture']
 
 for e in experiments:
     os.system(f'python3 experimentsV2.py  {ns} {nt} {ntest} {ps} {pt} {dist} {d} {it} {e}')
