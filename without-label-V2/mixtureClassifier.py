@@ -20,7 +20,7 @@ class MixtureClassifier(BaseEstimator):
 
     def fit(self, source_classifier,  x_target, y_target):
         self.source_classifier = source_classifier
-        
+        self.prop = np.mean(y_target) 
         cl = KDEClassifierOptimalParameter(workers = self.workers)
         cl.fit(x_target, y_target)
         self.target_classifier = cl._classifier
@@ -33,9 +33,14 @@ class MixtureClassifier(BaseEstimator):
     
 
     def predict(self, x):
-        prob = self.predict_proba(x)
-        classes = np.array([0, 1])
-        return classes[np.argmax(prob, 1)]
+        if self.prop == 0:
+            return [0 for _ in x]
+        elif self.prop == 1:
+            return [1 for _ in x]
+        else:
+            prob = self.predict_proba(x)
+            classes = np.array([0, 1])
+            return classes[np.argmax(prob, 1)]
 
 
 

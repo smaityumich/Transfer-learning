@@ -28,18 +28,23 @@ class KDEClassifier(BaseEstimator, ClassifierMixin):
                                       kernel=self.kernel).fit(Xi)
                         for Xi in training_sets]
         weights = np.array(weights)
-        self.logpriors_ = [np.log(Xi.shape[0] / X.shape[0])
-                           for Xi in training_sets] + np.log(weights)
+        self.prop = np.mean(y)
+        self.priors_ = np.multiply(np.array([1-self.prop, self.prop]) , weights)
         
         
     def predict_proba(self, X):
         self.logprobs = np.array([model.score_samples(X)
                              for model in self.models_]).T
-        result = np.exp(self.logprobs + self.logpriors_)
+        result = np.multiply(np.exp(self.logprobs), self.priors_)
         return result / result.sum(1, keepdims=True)
         
     def predict(self, X):
-        return self.classes_[np.argmax(self.predict_proba(X), 1)]
+        if self.prop == 0:
+            return [0 for _ in x]
+        elif self.prop == 1:
+            return [1 for _ in x]
+        else:
+            return self.classes_[np.argmax(self.predict_proba(X), 1)]
 
 
 
