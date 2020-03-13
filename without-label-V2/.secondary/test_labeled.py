@@ -1,10 +1,9 @@
 import numpy as np
 from withLabelV3 import *
-import multiprocessing as mp
 from dataGenerator import *
 
 
-def unit_iter_labeled(par = (500, 200, 200, 0.5, 0.8, 1, 4)):
+def unit_iter_labeled(par = (500, 200, 200, 0.5, 0.7, 2, 4)):
     
     # Parameters 
     n_source, n_target, n_test, prop_source, prop_target, dist, d = par
@@ -25,7 +24,7 @@ def unit_iter_labeled(par = (500, 200, 200, 0.5, 0.8, 1, 4)):
 
 
 
-def unit_expt_labeled(n_source = 500, n_target = 50, n_test = 100, prop_source = 0.5, prop_target = 0.8, dist = 1, d = 4, iteration = 10):
+def unit_expt_labeled(n_source = 500, n_target = 100, n_test = 200, prop_source = 0.5, prop_target = 0.8, dist = 1, d = 4, iteration = 1000):
     
     par = n_source, n_target, n_test,  prop_source, prop_target, dist, d
     pars = [par for _ in range(iteration)]
