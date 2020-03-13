@@ -75,12 +75,15 @@ class WithLabelClassifier(BaseEstimator, ClassifierMixin):
 
 
     def predict(self, x = np.random.normal(0, 1, (20, 3))):
-        
-        self.logprobs = np.array([model.score_samples(x) 
-                             for model in self.models_]).T
-        result = np.exp(self.logprobs +  self.logpriors_)
-        posterior = result / np.sum(result, axis = 1, keepdims = True)
-        return self.classes[np.argmax(posterior, 1)]
+        if self.prop_target == 0:
+            return [0 for _ in x]
+        elif self.prop_target == 1:
+            return [1 for _ in x]
+        else:
+            self.logprobs = np.array([model.score_samples(x) for model in self.models_]).T
+            result = np.exp(self.logprobs +  self.logpriors_)
+            posterior = result / np.sum(result, axis = 1, keepdims = True)
+            return self.classes[np.argmax(posterior, 1)]
         
 
 
