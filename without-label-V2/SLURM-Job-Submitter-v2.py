@@ -17,8 +17,8 @@ def expt(ns, nt, ntest, ps, pt, dist, d):
             fh.writelines('#SBATCH --nodes=1\n')
             fh.writelines('#SBATCH --cpus-per-task=1\n')
             fh.writelines('#SBATCH --mem-per-cpu=1gb\n')
-            fh.writelines("#SBATCH --time=02:00:00\n")
-            fh.writelines("#SBATCH --account=stats_dept1\n")
+            fh.writelines("#SBATCH --time=00:30:00\n")
+            fh.writelines("#SBATCH --account=yuekai1\n")
             fh.writelines("#SBATCH --mail-type=NONE\n")
             fh.writelines("#SBATCH --mail-user=smaity@umich.edu\n")
             fh.writelines('#SBATCH --partition=standard\n')
@@ -27,8 +27,8 @@ def expt(ns, nt, ntest, ps, pt, dist, d):
         os.system("sbatch %s" %job_file)
         os.system(f'rm {job_file}')
 
-#for nt in [25, 50, 100, 200, 400, 800, 1600, 3200]:
-#    expt(100, nt, 100, 0.5, 0.8, 0.8, 5)
+for nt in [25, 50, 100, 200, 400, 800, 1600, 3200]:
+    expt(100, nt, 100, 0.5, 0.9, 0.4, 4)
 #for nt in [25, 50, 100, 200, 400, 800, 1600, 3200, 6400]:
 #    expt(100, nt, 100, 0.5, 0.8, 1, 5)
 
@@ -36,7 +36,7 @@ def expt(ns, nt, ntest, ps, pt, dist, d):
 #    expt(2*n, n, 100, 0.5, 0.8, 1, 5)
 
 
-for ns in [25600, 51200]:
-    expt(ns, 25, 100, 0.5, 0.9, 0.4, 4)
+#for ns in [25600, 51200]:
+#    expt(ns, 25, 100, 0.5, 0.9, 0.4, 4)
 
 #expt(2000, 6400, 100, 0.5, 0.8, 2, 5)
