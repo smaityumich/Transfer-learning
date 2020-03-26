@@ -40,9 +40,9 @@ class KDEClassifier(BaseEstimator, ClassifierMixin):
         
     def predict(self, X):
         if self.prop == 0:
-            return [0 for _ in x]
+            return [0 for _ in X]
         elif self.prop == 1:
-            return [1 for _ in x]
+            return [1 for _ in X]
         else:
             return self.classes_[np.argmax(self.predict_proba(X), 1)]
 
