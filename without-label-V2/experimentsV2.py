@@ -73,6 +73,15 @@ elif experiment == 'Oracle':
     y_pred = cl.predict(xtest)
     result['error'] = np.mean((y_pred - ytest)**2)
 
+elif experiment == 'Oracle_bandwidth':
+    bandwidth = n_source**(-1/3)
+    cl = KDEClassifier(bandwidth)
+    w = np.array([(1-prop_target)/(1-prop_source), prop_target/prop_source])
+    cl.fit(X = xs, y = ys, weights = w)
+    y_pred = cl.predict(xtest)
+    result['error'] = np.mean((y_pred - ytest)**2)
+
+
 else:
     raise TypeError('Wrong experiment')
 
