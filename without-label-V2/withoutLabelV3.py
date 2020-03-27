@@ -78,7 +78,7 @@ class WithoutLabelClassifier():
         
         See Lipton et al, Detecting and Correlating label shift with black box predictors
         '''
-        if bandwidth == None or classifier == 'None':
+        if bandwidth == None:
             bandwidths =  np.linspace(0.1, 2, 20)
             cl = KDEClassifier()
             params = {'bandwidth': bandwidths}
@@ -98,11 +98,16 @@ class WithoutLabelClassifier():
             error_list = np.array([s['error'] for s in self.list_errors])
             
             self.bandwidth = self.list_errors[np.argmin(error_list)]['arg']['bandwidth']
-        if bandwidth != None:
+        else:
             self.bandwidth = bandwidth
+            
+        if classifier == 'None':
+            self._sourceClassifier = linear_model.LogisticRegression(penalty='none', solver = 'newton-cg')
+            self._sourceClassifier.fit(self.x_source, self.y_source)
 
-        self._sourceClassifier = linear_model.LogisticRegression(penalty='none')
-        self._sourceClassifier.fit(self.x_source, self.y_source)
+        else:
+            self._sourceClassifier = classifier
+
 
             
         

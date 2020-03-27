@@ -83,9 +83,8 @@ elif experiment == 'Oracle_bandwidth':
 
 elif experiment == 'QUnlabeled_bandwidth':
     bandwidth =  0.6*n_source**(-1/6)
-
     cl = WithoutLabelClassifier(workers = 1)
-    cl.fit(x_source = xs, y_source = ys, x_target = xt)
+    cl.fit(x_source = xs, y_source = ys, x_target = xt, bandwidth = bandwidth)
     result['bandwidth'] = cl.bandwidth
     y_pred = cl.predict(xtest)
     result['error'] = np.mean((y_pred - ytest)**2)
