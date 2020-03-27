@@ -3,6 +3,7 @@ from kdeClassifier import *
 from sklearn.model_selection import KFold, ParameterGrid
 from sklearn import base
 from multiprocessing import Pool
+from sklearn import linear_model
 
 
 
@@ -100,7 +101,7 @@ class WithoutLabelClassifier():
         if bandwidth != None:
             self.bandwidth = bandwidth
 
-        self._sourceClassifier = KDEClassifier(bandwidth = self.bandwidth, kernel = 'gaussian')
+        self._sourceClassifier = linear_model.LogisticRegression(penalty='none')
         self._sourceClassifier.fit(self.x_source, self.y_source)
 
             

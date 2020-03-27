@@ -74,10 +74,19 @@ elif experiment == 'Oracle':
     result['error'] = np.mean((y_pred - ytest)**2)
 
 elif experiment == 'Oracle_bandwidth':
-    bandwidth = 3*n_source**(-1/6)
+    bandwidth = 0.6*n_source**(-1/6)
     cl = KDEClassifier(bandwidth)
     w = np.array([(1-prop_target)/(1-prop_source), prop_target/prop_source])
     cl.fit(X = xs, y = ys, weights = w)
+    y_pred = cl.predict(xtest)
+    result['error'] = np.mean((y_pred - ytest)**2)
+
+elif experiment == 'QUnlabeled_bandwidth':
+    bandwidth =  0.6*n_source**(-1/6)
+
+    cl = WithoutLabelClassifier(workers = 1)
+    cl.fit(x_source = xs, y_source = ys, x_target = xt)
+    result['bandwidth'] = cl.bandwidth
     y_pred = cl.predict(xtest)
     result['error'] = np.mean((y_pred - ytest)**2)
 
