@@ -34,8 +34,9 @@ xtest, ytest = np.array(dh['x']), np.array(dh['y'])
 result = dict()
 
 if experiment == 'QLabeled':
+    bandwidth = 0.6*(n_source+n_target)**(-1/6)
     cl = WithLabelOptimalClassifier(nodes = 1)
-    cl.fit(x_source = xs, y_source = ys, x_target = xt, y_target = yt)
+    cl.fit(x_source = xs, y_source = ys, x_target = xt, y_target = yt, bandwidth = bandwidth)
     result['bandwidth'] = cl.bandwidth
     y_pred = cl.predict(xtest)
     result['error'] = np.mean((y_pred - ytest)**2)

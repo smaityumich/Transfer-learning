@@ -113,28 +113,33 @@ class WithLabelOptimalClassifier():
 
  
 
-    def fit(self, x_source = np.random.random((100,3)), y_source = np.random.binomial(1, 0.5, (100,)), x_target = np.random.random((100,3)), y_target = np.random.binomial(1, 0.5, (100,))):
+    def fit(self, x_source = np.random.random((100,3)), y_source = np.random.binomial(1, 0.5, (100,)), x_target = np.random.random((100,3)), y_target = np.random.binomial(1, 0.5, (100,)), bandwidth = None):
         
-        par_dict = {'bandwidth': np.linspace(0.1, 2, 20)}
-        params = list(ParameterGrid(par_dict))
-        cl = WithLabelClassifier()
-        methods = [base.clone(cl).set_params(**par) for par in params]
-        data = x_source, y_source, x_target, y_target
-        datas = [data for _ in range(len(params))]
-        args_list = zip(methods, params, datas)
+        if bandwidth == None:
+            par_dict = {'bandwidth': np.linspace(0.1, 2, 20)}
+            params = list(ParameterGrid(par_dict))
+            cl = WithLabelClassifier()
+            methods = [base.clone(cl).set_params(**par) for par in params]
+            data = x_source, y_source, x_target, y_target
+            datas = [data for _ in range(len(params))]
+            args_list = zip(methods, params, datas)
 
-        if self.nodes == 1:
-            list_errors = list(map(self.unit_work, args_list))
+            if self.nodes == 1:
+                list_errors = list(map(self.unit_work, args_list))
 
+            else:
+                with Pool(self.nodes) as pool:
+                    list_errors = pool.map(self.unit_work, args_list)
+        
+            error_list = np.array([s['error'] for s in list_errors])
+            self.bandwidth = list_errors[np.argmin(error_list)]['args']['bandwidth']
 
         else:
-            with Pool(self.nodes) as pool:
-                list_errors = pool.map(self.unit_work, args_list)
-        
-
-
-        error_list = np.array([s['error'] for s in list_errors])
-        self.bandwidth = list_errors[np.argmin(error_list)]['args']['bandwidth']
+            try:
+                bandwidth = float(bandwidth)
+            except:
+                raise TypeError('bandwidth can\'t be transfromed to float')
+            self.bandwidth = bandwidth
 
         self._classifier = WithLabelClassifier(bandwidth = self.bandwidth)
         self._classifier.source_data(x_source, y_source)
