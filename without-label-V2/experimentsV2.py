@@ -74,7 +74,7 @@ elif experiment == 'Oracle':
     result['error'] = np.mean((y_pred - ytest)**2)
 
 elif experiment == 'Oracle_bandwidth':
-    bandwidth = n_source**(-1/6)
+    bandwidth = 0.5*n_source**(-1/6)
     cl = KDEClassifier(bandwidth)
     w = np.array([(1-prop_target)/(1-prop_source), prop_target/prop_source])
     cl.fit(X = xs, y = ys, weights = w)

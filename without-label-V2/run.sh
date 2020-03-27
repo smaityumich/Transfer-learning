@@ -4,7 +4,7 @@ rm slurm-*
 python3 json_joiner.py
 rm .result/*
 rm .data/*
-mv result.json result-json/result-np-oracle-bandwidth-coeff.json
+mv result.json result-json/result-np-oracle-bandwidth-coeff-0.5.json
 git add --all
 git commit -a
 
