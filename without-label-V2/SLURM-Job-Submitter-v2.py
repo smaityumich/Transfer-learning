@@ -6,7 +6,7 @@ job_file = 'submit.sbat'
 
 def expt(ns, nt, ntest, ps, pt, dist, d):
 
-    iteration = 40
+    iteration = 50
     for i in range(iteration):
         os.system(f'touch {job_file}')
 
@@ -27,8 +27,8 @@ def expt(ns, nt, ntest, ps, pt, dist, d):
         os.system("sbatch %s" %job_file)
         os.system(f'rm {job_file}')
 
-for ns in [25, 50, 100, 200, 400, 800, 1600, 3200, 6400, 12800]:
-    expt(ns, 100, 100, 0.5, 0.9, 0.4, 4)
+#for ns in [25, 50, 100, 200, 400, 800, 1600, 3200, 6400, 12800]:
+#    expt(ns, 100, 100, 0.5, 0.9, 0.4, 4)
 #for nt in [25, 50, 100, 200, 400, 800, 1600, 3200, 6400]:
 #    expt(100, nt, 100, 0.5, 0.8, 1, 5)
 
