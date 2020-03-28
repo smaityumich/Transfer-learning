@@ -63,14 +63,14 @@ class KDEClassifierOptimalParameter():
 
 
     def unit_work(self, args):
-        method, arg , data = args
+        method, arg, data, w = args
         x, y = data
         kf = KFold(n_splits = self.cv)
         errors = np.zeros((self.cv, ))
 
         for index, (train_index, test_index) in enumerate(kf.split(x)):
             x_train, x_test, y_train, y_test = x[train_index], x[test_index], y[train_index], y[test_index]
-            method.fit(x_train, y_train)
+            method.fit(x_train, y_train, w)
             y_pred = method.predict(x_test)
             errors[index] = np.mean((y_pred-y_test)**2)
 
@@ -81,7 +81,7 @@ class KDEClassifierOptimalParameter():
 
 
 
-    def fit(self, x = np.random.random((100,3)), y = np.random.binomial(1, 0.5, (100,))):
+    def fit(self, x = np.random.random((100,3)), y = np.random.binomial(1, 0.5, (100,)), weights = [1, 1]):
         x = np.array(x)
         y = np.array(y)
         
@@ -104,20 +104,21 @@ class KDEClassifierOptimalParameter():
             models = [base.clone(cl).set_params(**arg) for arg in par_list]
             data = x, y
             datas = [data for _ in range(len(par_list))]
-            args = zip(models, par_list, datas)
+            W = [weights for _ in range(len(par_list))]
+            args = zip(models, par_list, datas, W)
             
             if self.workers == 1:
                 self.list_errors = list(map(self.unit_work, args))
 
             else:
                 with Pool(self.workers) as pool:
-                    self.list_errors = pool.map(self.unit_work, zip(models, par_list, datas))
+                    self.list_errors = pool.map(self.unit_work, args)
 
             error_list = np.array([s['error'] for s in self.list_errors])
             self.bandwidth = self.list_errors[np.argmin(error_list)]['arg']['bandwidth']
  
         self._classifier = KDEClassifier(bandwidth = self.bandwidth)
-        self._classifier.fit(self.x, self.y)
+        self._classifier.fit(self.x, self.y, weights)
 
     def predict_proba(self, x):
         return self._classifier.predict_proba(x)

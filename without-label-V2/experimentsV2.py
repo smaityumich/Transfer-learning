@@ -34,7 +34,7 @@ xtest, ytest = np.array(dh['x']), np.array(dh['y'])
 result = dict()
 
 if experiment == 'QLabeled':
-    bandwidth = 0.6*(n_source+n_target)**(-1/6)
+    bandwidth = 1.6*(n_source+n_target)**(-1/6)
     cl = WithLabelOptimalClassifier(nodes = 1)
     cl.fit(x_source = xs, y_source = ys, x_target = xt, y_target = yt, bandwidth = bandwidth)
     result['bandwidth'] = cl.bandwidth
@@ -57,12 +57,32 @@ elif experiment == 'Mixture':
     result['error'] = np.mean((y_pred - ytest)**2)
 
 
+elif experiment == 'Mixture_bandwidths':
+    cl = OptimalMixtureClassifier(nodes = 1)
+    bandwidth_source = 0.5*(n_source)**(-1/6)
+    bandwidth_target = 0.5*(n_target)**(-1/6)
+    cl.fit(x_source = xs, y_source = ys, x_target = xt, y_target = yt, bandwidth_source=bandwidth_source, bandwidth_target=bandwidth_target)
+    result['bandwidth'] = cl.mixture
+    y_pred = cl.predict(xtest)
+    result['error'] = np.mean((y_pred - ytest)**2)
+
+
+
 elif experiment == 'Classical':
     cl = KDEClassifierOptimalParameter(workers = 1)
     cl.fit(x = xt, y = yt)
     result['bandwidth'] = cl.bandwidth
     y_pred = cl.predict(xtest)
     result['error'] = np.mean((y_pred - ytest)**2)
+
+elif experiment == 'Classical_bandwidth':
+    bandwidth = 0.15*(n_target)**(-1/6)
+    cl = KDEClassifier(bandwidth = bandwidth)
+    cl.fit(X = xt, y = yt)
+    result['bandwidth'] = bandwidth
+    y_pred = cl.predict(xtest)
+    result['error'] = np.mean((y_pred - ytest)**2)
+
 
 elif experiment == 'Oracle':
     cl = KDEClassifierOptimalParameter(workers = 1)
