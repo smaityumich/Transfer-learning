@@ -57,7 +57,7 @@ elif experiment == 'Mixture':
     result['error'] = np.mean((y_pred - ytest)**2)
 
 
-elif experiment == 'Mixture_bandwidths':
+elif experiment == 'Mixture_bandwidth':
     cl = OptimalMixtureClassifier(nodes = 1)
     bandwidth_source = 0.5*(n_source)**(-1/6)
     bandwidth_target = 0.5*(n_target)**(-1/6)
