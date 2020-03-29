@@ -6,7 +6,7 @@ job_file = 'submit.sbat'
 
 def expt(ns, nt, ntest, ps, pt, dist, d):
 
-    iteration = 40
+    iteration = 1000
     for i in range(iteration):
         os.system(f'touch {job_file}')
 
