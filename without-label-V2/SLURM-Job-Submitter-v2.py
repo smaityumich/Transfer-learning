@@ -22,7 +22,7 @@ def expt(ns, nt, ntest, ps, pt, dist, d):
             fh.writelines("#SBATCH --mail-type=NONE\n")
             fh.writelines("#SBATCH --mail-user=smaity@umich.edu\n")
             fh.writelines('#SBATCH --partition=standard\n')
-            fh.writelines(f"python3 unit_exptV3.py {ns} {nt} {ntest} {ps} {pt} {dist} {d} {i}")
+            fh.writelines(f"python3 unit_exptV4.py {ns} {nt} {ntest} {ps} {pt} {dist} {d} {i}")
 
         os.system("sbatch %s" %job_file)
         os.system(f'rm {job_file}')
