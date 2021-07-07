@@ -1,7 +1,8 @@
 import numpy as np
-from sklearn import metrics, neighbors
+from sklearn import metrics, neighbors, base
 from sklearn.base import BaseEstimator, ClassifierMixin
-from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import GridSearchCV, ParameterGrid, KFold
+from multiprocessing import Pool
 
 
 class KDEClassifier(BaseEstimator, ClassifierMixin):
@@ -27,18 +28,23 @@ class KDEClassifier(BaseEstimator, ClassifierMixin):
                                       kernel=self.kernel).fit(Xi)
                         for Xi in training_sets]
         weights = np.array(weights)
-        self.logpriors_ = [np.log(Xi.shape[0] / X.shape[0])
-                           for Xi in training_sets] + np.log(weights)
+        self.prop = np.mean(y)
+        self.priors_ = np.multiply(np.array([1-self.prop, self.prop]) , weights)
         
         
     def predict_proba(self, X):
         self.logprobs = np.array([model.score_samples(X)
                              for model in self.models_]).T
-        result = np.exp(self.logprobs + self.logpriors_)
+        result = np.multiply(np.exp(self.logprobs), self.priors_)
         return result / result.sum(1, keepdims=True)
         
     def predict(self, X):
-        return self.classes_[np.argmax(self.predict_proba(X), 1)]
+        if self.prop == 0:
+            return [0 for _ in x]
+        elif self.prop == 1:
+            return [1 for _ in x]
+        else:
+            return self.classes_[np.argmax(self.predict_proba(X), 1)]
 
 
 
@@ -49,10 +55,33 @@ class KDEClassifierOptimalParameter():
     Finds the smoothness parameter optimally using cross-vaidation
     '''
 
-    def __init__(self, bandwidth = None):
+    def __init__(self, bandwidth = None, cv = 5, workers = 1):
         self.bandwidth  = bandwidth
+        self.cv = cv
+        self.workers = workers
 
-    def fit(self, x = np.random.random((100,3)), y = np.random.binomial(1, 0.5, (100,))):
+
+
+    def unit_work(self, args):
+        method, arg, data, w = args
+        x, y = data
+        kf = KFold(n_splits = self.cv)
+        errors = np.zeros((self.cv, ))
+
+        for index, (train_index, test_index) in enumerate(kf.split(x)):
+            x_train, x_test, y_train, y_test = x[train_index], x[test_index], y[train_index], y[test_index]
+            method.fit(x_train, y_train, w)
+            y_pred = method.predict(x_test)
+            errors[index] = np.mean((y_pred-y_test)**2)
+
+        return {'arg': arg, 'error': np.mean(errors), 'errors': errors}
+
+
+
+
+
+
+    def fit(self, x = np.random.random((100,3)), y = np.random.binomial(1, 0.5, (100,)), weights = [1, 1]):
         x = np.array(x)
         y = np.array(y)
         
@@ -69,11 +98,27 @@ class KDEClassifierOptimalParameter():
             self.bandwidth = float(self.bandwidth)
         except:
             bandwidths =  np.linspace(0.1, 2, 20)
-            grid = GridSearchCV(KDEClassifier(), {'bandwidth': bandwidths}, cv = 5)
-            grid.fit(self.x, self.y)
-            self.bandwidth = grid.best_params_['bandwidth']
+            cl = KDEClassifier()
+            params = {'bandwidth': bandwidths}
+            par_list = list(ParameterGrid(params))
+            models = [base.clone(cl).set_params(**arg) for arg in par_list]
+            data = x, y
+            datas = [data for _ in range(len(par_list))]
+            W = [weights for _ in range(len(par_list))]
+            args = zip(models, par_list, datas, W)
+            
+            if self.workers == 1:
+                self.list_errors = list(map(self.unit_work, args))
+
+            else:
+                with Pool(self.workers) as pool:
+                    self.list_errors = pool.map(self.unit_work, args)
+
+            error_list = np.array([s['error'] for s in self.list_errors])
+            self.bandwidth = self.list_errors[np.argmin(error_list)]['arg']['bandwidth']
+ 
         self._classifier = KDEClassifier(bandwidth = self.bandwidth)
-        self._classifier.fit(self.x, self.y)
+        self._classifier.fit(self.x, self.y, weights)
 
     def predict_proba(self, x):
         return self._classifier.predict_proba(x)

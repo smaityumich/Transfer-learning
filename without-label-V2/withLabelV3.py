@@ -1,9 +1,8 @@
 import numpy as np
-from sklearn import metrics, neighbors
+from sklearn import base, metrics, neighbors
 from sklearn.base import BaseEstimator, ClassifierMixin
-from sklearn.model_selection import GridSearchCV, ParameterGrid
-from CVGridSearch import *
-import pickle
+from sklearn.model_selection import ParameterGrid, KFold
+from multiprocessing import Pool
 
 
 class WithLabelClassifier(BaseEstimator, ClassifierMixin):
@@ -76,27 +75,72 @@ class WithLabelClassifier(BaseEstimator, ClassifierMixin):
 
 
     def predict(self, x = np.random.normal(0, 1, (20, 3))):
-        
-        self.logprobs = np.array([model.score_samples(x) 
-                             for model in self.models_]).T
-        result = np.exp(self.logprobs +  self.logpriors_)
-        posterior = result / result.sum(1, keepdims = True)
-        return self.classes[np.argmax(posterior, 1)]
+        if self.prop_target == 0:
+            return [0 for _ in x]
+        elif self.prop_target == 1:
+            return [1 for _ in x]
+        else:
+            self.logprobs = np.array([model.score_samples(x) for model in self.models_]).T
+            result = np.exp(self.logprobs +  self.logpriors_)
+            posterior = result / np.sum(result, axis = 1, keepdims = True)
+            return self.classes[np.argmax(posterior, 1)]
         
 
 
 
 class WithLabelOptimalClassifier():
 
-    def __init__(self, kernel = 'gaussian'):
+    def __init__(self, kernel = 'gaussian', nodes = 1, cv = 5):
         self.kernel = kernel
+        self.nodes = nodes
+        self.kf = KFold(n_splits = cv)
+        self.cv = cv
 
 
-    def fit(self, x_source = np.random.random((100,3)), y_source = np.random.binomial(1, 0.5, (100,)), x_target = np.random.random((100,3)), y_target = np.random.binomial(1, 0.5, (100,))):
-        bandwidths = np.linspace(0.1, 2, 40)
-        grid = CVGridSearch(WithLabelClassifier(), {'bandwidth': bandwidths}, cv = 5)
-        grid.fit(x_source, y_source, x_target, y_target)
-        self.bandwidth = grid.best_param_['bandwidth']
+    def unit_work(self, args):
+        method, arg_str, data = args
+        x_source, y_source, x_target, y_target = data
+        errors = np.zeros((self.cv,))
+        
+        for index, (train_index, test_index) in enumerate(self.kf.split(x_target)):
+            x_train, x_test, y_train, y_test = x_target[train_index], x_target[test_index], y_target[train_index], y_target[test_index]
+            method.source_data(x_source, y_source)
+            method.fit(x_train, y_train)
+            y_pred = method.predict(x_test)
+            errors[index] = np.mean((y_pred - y_test)**2)
+
+        return {'args': arg_str, 'error-cv': errors, 'error': np.mean(errors)}
+
+ 
+
+    def fit(self, x_source = np.random.random((100,3)), y_source = np.random.binomial(1, 0.5, (100,)), x_target = np.random.random((100,3)), y_target = np.random.binomial(1, 0.5, (100,)), bandwidth = None):
+        
+        if bandwidth == None:
+            par_dict = {'bandwidth': np.linspace(0.1, 2, 20)}
+            params = list(ParameterGrid(par_dict))
+            cl = WithLabelClassifier()
+            methods = [base.clone(cl).set_params(**par) for par in params]
+            data = x_source, y_source, x_target, y_target
+            datas = [data for _ in range(len(params))]
+            args_list = zip(methods, params, datas)
+
+            if self.nodes == 1:
+                list_errors = list(map(self.unit_work, args_list))
+
+            else:
+                with Pool(self.nodes) as pool:
+                    list_errors = pool.map(self.unit_work, args_list)
+        
+            error_list = np.array([s['error'] for s in list_errors])
+            self.bandwidth = list_errors[np.argmin(error_list)]['args']['bandwidth']
+
+        else:
+            try:
+                bandwidth = float(bandwidth)
+            except:
+                raise TypeError('bandwidth can\'t be transfromed to float')
+            self.bandwidth = bandwidth
+
         self._classifier = WithLabelClassifier(bandwidth = self.bandwidth)
         self._classifier.source_data(x_source, y_source)
         self._classifier.fit(x_target, y_target)

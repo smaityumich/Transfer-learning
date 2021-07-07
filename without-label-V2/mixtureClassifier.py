@@ -4,6 +4,7 @@ from sklearn.base import BaseEstimator
 from sklearn import base
 from sklearn.model_selection import KFold, ParameterGrid
 from multiprocessing import Pool
+import multiprocessing as mp
 
 
 class MixtureClassifier(BaseEstimator):
@@ -12,16 +13,28 @@ class MixtureClassifier(BaseEstimator):
 
     The individual success probabilities are estimated using kernel density, where the smoothing parameter is chosen according to cross validation
     '''
-    def __init__(self, mixture = 0.5, kernel = 'gaussian'):
+    def __init__(self, mixture = 0.5, kernel = 'gaussian', workers = 1):
         self.kernel = kernel
         self.mixture = mixture
+        self.workers = workers
 
-    def fit(self, source_classifier,  x_target, y_target):
+    def fit(self, source_classifier,  x_target, y_target, bandwidth = None):
         self.source_classifier = source_classifier
-        
-        cl = KDEClassifierOptimalParameter()
-        cl.fit(x_target, y_target)
-        self.target_classifier = cl._classifier
+        self.prop = np.mean(y_target) 
+        if bandwidth == None:
+            cl = KDEClassifierOptimalParameter(workers = self.workers)
+            cl.fit(x_target, y_target)
+            self.target_classifier = cl._classifier
+ 
+
+        else:
+            try:
+                bandwidth = float(bandwidth)
+            except:
+                raise TypeError('Bandwidth can\'t be converted to float')
+            cl = KDEClassifier(bandwidth = bandwidth)
+            cl.fit(x_target, y_target)
+            self.target_classifier = cl
  
     def predict_proba(self, x): 
         '''
@@ -31,9 +44,14 @@ class MixtureClassifier(BaseEstimator):
     
 
     def predict(self, x):
-        prob = self.predict_proba(x)
-        classes = np.array([0, 1])
-        return classes[np.argmax(prob, 1)]
+        if self.prop == 0:
+            return [0 for _ in x]
+        elif self.prop == 1:
+            return [1 for _ in x]
+        else:
+            prob = self.predict_proba(x)
+            classes = np.array([0, 1])
+            return classes[np.argmax(prob, 1)]
 
 
 
@@ -46,14 +64,14 @@ class OptimalMixtureClassifier():
 
 
     def unit_work(self, args):
-        method, arg, data = args
+        method, arg, data, bandwidth = args
         source_classifier, x_target, y_target = data
         kf = KFold(n_splits=self.cv)
         errors = np.zeros((self.cv,))
 
         for index, (train_index, test_index) in enumerate(kf.split(x_target)):
             x_train, x_test, y_train, y_test = x_target[train_index], x_target[test_index], y_target[train_index], y_target[test_index]
-            method.fit(source_classifier, x_train, y_train)
+            method.fit(source_classifier, x_train, y_train, bandwidth)
             y_pred = method.predict(x_test)
             errors[index] = np.mean((y_test-y_pred)**2)
 
@@ -61,26 +79,37 @@ class OptimalMixtureClassifier():
 
 
 
-    def fit(self, x_source, y_source, x_target, y_target, cv = 5, nodes = 1):
+    def fit(self, x_source, y_source, x_target, y_target, cv = 5, bandwidth_source = None, bandwidth_target = None):
 
-        cl = KDEClassifierOptimalParameter()
-        cl.fit(x_source, y_source)
-        source_classifier = cl._classifier
+        if bandwidth_source == None:
+            cl = KDEClassifierOptimalParameter(workers = self.workers)
+            cl.fit(x = x_source, y = y_source)
+            source_classifier = cl._classifier
 
 
-        cl = MixtureClassifier()
-        params = {'mixture': np.linspace(0, 1, 11)}
+        else:
+            try:
+                bandwidth_source = float(bandwidth_source)
+            except:
+                raise TypeError('Source bandwidth can\'t be converted to float')
+            cl = KDEClassifier(bandwidth = bandwidth_source)
+            cl.fit(X = x_source, y = y_source)
+            source_classifier = cl
+
+
+        cl = MixtureClassifier(workers = self.workers)
+        params = {'mixture': np.linspace(0, 1, 20)}
         par_list = list(ParameterGrid(params))
         models = [base.clone(cl).set_params(**arg) for arg in par_list]
         data = source_classifier, x_target, y_target
         datas = [data for _ in range(len(par_list))]
-        
-        with Pool(self.workers) as pool:
-            list_errors = pool.map(self.unit_work, zip(models, par_list, datas))
+        bandwidths = [bandwidth_target for _ in range(len(par_list))]
+        args = zip(models, par_list, datas, bandwidths)
+        list_errors = list(map(self.unit_work, args))
         error_list = np.array([s['error'] for s in list_errors])
         self.mixture = list_errors[np.argmin(error_list)]['arg']['mixture']
         self.classifier = MixtureClassifier(mixture = self.mixture)
-        self.classifier.fit(source_classifier, x_target, y_target)
+        self.classifier.fit(source_classifier, x_target, y_target, bandwidth_target)
 
     def predict(self, x):
         return self.classifier.predict(x)

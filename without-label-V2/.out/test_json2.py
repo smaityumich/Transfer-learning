@@ -1,0 +1,27 @@
+import json
+import numpy as np
+
+def source_(n_source, n_target, prop_source, prop_target, dist, d, iteration):
+    
+    filename = f'n_source-{n_source}-n_target-{n_target}-prop_source-{prop_source}-prop_target-{prop_target}-dist-{float(dist)}-d-{d}-iter-{iteration}.json'
+    bayes_error, labeled_data, unlabeled_data, mix_classifier, classical_classifier, oracle_unlabeled = np.zeros((iteration,)), np.zeros((iteration,)), np.zeros((iteration,)), np.zeros((iteration,)), np.zeros((iteration,)), np.zeros((iteration,)) 
+
+    with open(filename, 'r') as fp:
+        out = json.load(fp)
+        for i in range(100):
+            dict_hand = out[str(i)]
+            bayes_error[i], labeled_data[i] = dict_hand['test-data']['bayes-error'], dict_hand['labeled-data']['error']
+            unlabeled_data[i], mix_classifier[i] = dict_hand['unlabeled-data']['error'], dict_hand['mixture-classifier']['error']
+            classical_classifier[i], oracle_unlabeled[i] = dict_hand['classical-classifier']['error'], dict_hand['oracle-classifier']['error']
+   
+    return np.mean([bayes_error, labeled_data, unlabeled_data, mix_classifier, classical_classifier, oracle_unlabeled], axis  = 1)
+
+
+n_sources = np.array(range(1,33))*50
+dict_temp = dict()
+
+for n_source in n_sources:
+    bayes, labeled, unlabeled, mix, classical, oracle = source_(n_source, 200, 0.5, 0.8, 1, 5, 100)
+    dict_temp[n_source] = {'bayes-error': bayes, 'labeled-error': labeled, 'unlabeled-error': unlabeled, 'mix-error': mix, 'classical-error': classical, 'oracle-error': oracle}
+
+

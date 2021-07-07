@@ -12,8 +12,8 @@ class DataGenerator():
         self.y = np.random.binomial(1, self.prop, (self.n,))
         
     def _generateX(self, distance = 0):
-        self.mu = distance/np.sqrt(self.d)
-        f = lambda y : np.random.normal(loc = y*self.mu, scale = 1, size = (self.d,))  ## Generates data from N_d(mu, I_d) if label=1, else from N_d(0,I_d) if label=0
+        self.mu = distance
+        f = lambda y : np.random.normal(loc = self.mu, scale = 1, size = (self.d,))  if y else  np.random.normal(loc = 0, scale = 1, size = (self.d,)) ## Generates data from N_d(mu, I_d) if label=1, else from N_d(0,I_d) if label=0
         self.x = [f(y) for y in self.y]
         
     def _bayesDecision(self, x):
